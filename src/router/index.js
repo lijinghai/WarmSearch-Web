@@ -108,7 +108,7 @@ export const asyncRoutes = [
   tableRouter,
   nestedRouter,
   chartsRouter,
-  //首页轮播图
+  // 首页轮播图
   {
     path: '/i18n',
     component: Layout,
@@ -118,12 +118,12 @@ export const asyncRoutes = [
         component: () => import('@/views/uni-app/unbo/index'),
         name: 'UnBo',
         meta: { title: 'UnBo',
-                icon: 'international'
+          icon: 'international'
         }
       }
     ]
   },
-  //首页展示的物品信息
+  // 首页展示的物品信息
   {
     path: '/goodsfirst',
     component: Layout,
@@ -138,7 +138,7 @@ export const asyncRoutes = [
       }
     ]
   },
-  //寻物类别
+  // 寻物类别
   {
     path: '/category',
     component: Layout,
@@ -153,7 +153,7 @@ export const asyncRoutes = [
       }
     ]
   },
-  //物品详情页信息
+  // 物品详情页信息
   {
     path: '/goodsDetail',
     component: Layout,
@@ -168,7 +168,7 @@ export const asyncRoutes = [
       }
     ]
   },
-  //招领信息
+  // 招领信息
   {
     path: '/sFind',
     component: Layout,
@@ -183,7 +183,7 @@ export const asyncRoutes = [
       }
     ]
   },
-  //待招领物品详情信息
+  // 待招领物品详情信息
   {
     path: '/findList',
     component: Layout,
@@ -197,7 +197,7 @@ export const asyncRoutes = [
         }
       }
     ]
-  },
+  }
 
   // {
   //   path: '/example',
