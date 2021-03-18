@@ -39,13 +39,13 @@
           <span>{{ row.id }}</span>
         </template>
       </el-table-column>
-      <el-table-column label="图片" width="1180px" align="center">
+      <el-table-column label="图片" align="center">
         <template slot-scope="{row}">
           <img :src="row.imgUrl" style="width:120px; height:100px">
         </template>
       </el-table-column>
 
-      <el-table-column :label="$t('table.actions')" align="center" width="400" class-name="small-padding fixed-width">
+      <el-table-column :label="$t('table.actions')" align="center" class-name="small-padding fixed-width">
         <template slot-scope="{row,$index}">
           <!--          <el-button type="primary" size="mini" @click="handleUpdate(row)">-->
           <!--            {{ $t('table.edit') }}-->
@@ -67,7 +67,7 @@
             name="file"
             class="upload-demo"
             action="http://localhost:8091/unbo"
-            :before-upload="beforeUpload"
+            :on-success="beforeUpload"
             :on-preview="handlePreview"
             :on-remove="handleRemove"
             :file-list="fileList"

@@ -34,7 +34,7 @@
       style="width: 100%;"
       @sort-change="sortChange"
     >
-      <el-table-column label="ID" prop="id" sortable="custom" align="center" width="90" :class-name="getSortClass('id')">
+      <el-table-column label="ID" prop="id" sortable="custom" align="center" zz :class-name="getSortClass('id')">
         <template slot-scope="{row}">
           <span>{{ row.id }}</span>
         </template>
@@ -45,49 +45,49 @@
           <img :src="row.imgurl" style="width:120px; height:100px">
         </template>
       </el-table-column>
-            <el-table-column label="名称" width="120px" align="center">
-              <template slot-scope="{row}">
-                <span>{{ row.imgname }}</span>
-              </template>
-            </el-table-column>
-            <el-table-column label="描述" width="120px" align="center">
-              <template slot-scope="{row}">
-                <span>{{ row.imgdesc}}</span>
-              </template>
-            </el-table-column>
-            <el-table-column label="状态" width="120px" align="center">
-              <template slot-scope="{row}">
-                <span>{{ row.status }}</span>
-              </template>
-            </el-table-column>
-            <el-table-column label="联系人" width="140px" align="center">
-              <template slot-scope="{row}">
-                <span>{{ row.lostname }}</span>
-              </template>
-            </el-table-column>
+      <el-table-column label="名称" width="120px" align="center">
+        <template slot-scope="{row}">
+          <span>{{ row.imgname }}</span>
+        </template>
+      </el-table-column>
+      <el-table-column label="描述" width="120px" align="center">
+        <template slot-scope="{row}">
+          <span>{{ row.imgdesc }}</span>
+        </template>
+      </el-table-column>
+      <el-table-column label="状态" width="120px" align="center">
+        <template slot-scope="{row}">
+          <span>{{ row.status }}</span>
+        </template>
+      </el-table-column>
+      <el-table-column label="联系人" width="140px" align="center">
+        <template slot-scope="{row}">
+          <span>{{ row.lostname }}</span>
+        </template>
+      </el-table-column>
 
-            <el-table-column label="联系方式" type="date" width="200px" align="center">
-              <template slot-scope="{row}">
-                <span>{{ row.contact}}</span>
-              </template>
-            </el-table-column>
+      <el-table-column label="联系方式" type="date" width="200px" align="center">
+        <template slot-scope="{row}">
+          <span>{{ row.contact }}</span>
+        </template>
+      </el-table-column>
 
-            <el-table-column label="类型" type="date" width="170px" align="center">
-              <template slot-scope="{row}">
-                <span>{{ row.gid}}</span>
-              </template>
-            </el-table-column>
+      <el-table-column label="类型" type="date" width="170px" align="center">
+        <template slot-scope="{row}">
+          <span>{{ row.gid }}</span>
+        </template>
+      </el-table-column>
 
-            <el-table-column label="发布时间" type="date" width="200px" align="center">
-              <template slot-scope="{row}">
-                <span>{{ row.createTime | parseTime('{y}-{m}-{d} {h}:{i}:{s}') }}</span>
-              </template>
-            </el-table-column>
+      <el-table-column label="发布时间" type="date" width="200px" align="center">
+        <template slot-scope="{row}">
+          <span>{{ row.createTime | parseTime('{y}-{m}-{d} {h}:{i}:{s}') }}</span>
+        </template>
+      </el-table-column>
       <el-table-column :label="$t('table.actions')" align="center" width="370" class-name="small-padding fixed-width">
         <template slot-scope="{row,$index}">
-                    <el-button type="primary" size="mini" @click="handleUpdate(row)">
-                      {{ $t('table.edit') }}
-                    </el-button>
+          <el-button type="primary" size="mini" @click="handleUpdate(row)">
+            {{ $t('table.edit') }}
+          </el-button>
           <el-button v-if="row.status!='deleted'" size="mini" type="danger" @click="handleDelete(row,$index)">
             {{ $t('table.delete') }}
           </el-button>
@@ -100,20 +100,21 @@
     <el-dialog :title="textMap[dialogStatus]" :visible.sync="dialogFormVisible">
       <el-form ref="dataForm" :rules="rules" :model="temp" label-position="left" label-width="110px" style="width: 400px; margin-left:150px;">
 
-          <el-form-item :label="$t('table.imgUrl')" prop="imgUrl">
-            <el-upload
-              name="file"
-              class="upload-demo"
-              ref="upload"
-              action="http://localhost:8091/goodsfirst"
-              :on-preview="handlePreview"
-              :on-remove="handleRemove"
-              :file-list="fileList"
-              list-type="picture">
-              <el-button size="small" type="primary">点击上传</el-button>
-              <div slot="tip" class="el-upload__tip">只能上传jpg/png文件，且不超过500kb</div>
-            </el-upload>
-          </el-form-item>
+        <el-form-item :label="$t('table.imgUrl')" prop="imgUrl">
+          <el-upload
+            ref="upload"
+            name="file"
+            class="upload-demo"
+            action="http://localhost:8091/goodsfirst"
+            :on-preview="handlePreview"
+            :on-remove="handleRemove"
+            :file-list="fileList"
+            list-type="picture"
+          >
+            <el-button size="small" type="primary">点击上传</el-button>
+            <div slot="tip" class="el-upload__tip">只能上传jpg/png文件，且不超过500kb</div>
+          </el-upload>
+        </el-form-item>
 
         <el-form-item :label="$t('table.imgdesc')" prop="imgdesc">
           <el-input v-model="temp.imgdesc" />
@@ -132,7 +133,7 @@
         </el-form-item>
 
         <el-form-item :label="$t('table.contact')" prop="contact">
-           <el-input v-model="temp.contact" />
+          <el-input v-model="temp.contact" />
         </el-form-item>
 
         <el-form-item :label="$t('table.gid')" prop="gid">
@@ -237,7 +238,7 @@ export default {
       },
       importanceOptions: [1, 2, 3],
       calendarTypeOptions,
-      sortOptions: [{ label: 'ID Descending', key: '-id' },{ label: 'ID Ascending', key: '+id' }],
+      sortOptions: [{ label: 'ID Descending', key: '-id' }, { label: 'ID Ascending', key: '+id' }],
       statusOptions: ['published', 'draft', 'deleted'],
       showReviewer: false,
       temp: {
@@ -249,7 +250,7 @@ export default {
         createTime: new Date(),
         lostname: '',
         contact: '',
-        gid: '',
+        gid: ''
         // timestamp: new Date(),
         // username: '',
         // password: '',
@@ -286,10 +287,10 @@ export default {
   },
   methods: {
     handleRemove(file, fileList) {
-      console.log(file, fileList);
+      console.log(file, fileList)
     },
     handlePreview(file) {
-      console.log(file);
+      console.log(file)
     },
 
     getList() {
@@ -348,7 +349,7 @@ export default {
         createTime: new Date(),
         lostname: '',
         contact: '',
-        gid: '',
+        gid: ''
         // username: '',
         // password: '',
         // profession: '',
@@ -367,7 +368,7 @@ export default {
       })
     },
     createData() {
-      this.$refs.upload.submit();
+      this.$refs.upload.submit()
       this.$refs['dataForm'].validate((valid) => {
         if (valid) {
           // this.temp.id = parseInt(Math.random() * 100) + 1024 // mock a id
