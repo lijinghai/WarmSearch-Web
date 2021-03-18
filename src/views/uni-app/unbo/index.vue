@@ -2,15 +2,15 @@
   <div class="app-container">
     <div class="filter-container">
       <el-input v-model="listQuery.id" :placeholder="$t('table.id')" style="width: 200px;" class="filter-item" @keyup.enter.native="handleFilter" />
-<!--      <el-select v-model="listQuery.importance" :placeholder="$t('table.importance')" clearable style="width: 90px" class="filter-item">-->
-<!--        <el-option v-for="item in importanceOptions" :key="item" :label="item" :value="item" />-->
-<!--      </el-select>-->
-<!--      <el-select v-model="listQuery.type" :placeholder="$t('table.type')" clearable class="filter-item" style="width: 130px">-->
-<!--        <el-option v-for="item in calendarTypeOptions" :key="item.key" :label="item.display_name+'('+item.key+')'" :value="item.key" />-->
-<!--      </el-select>-->
-<!--      <el-select v-model="listQuery.sort" style="width: 140px" class="filter-item" @change="handleFilter">-->
-<!--        <el-option v-for="item in sortOptions" :key="item.key" :label="item.label" :value="item.key" />-->
-<!--      </el-select>-->
+      <!--      <el-select v-model="listQuery.importance" :placeholder="$t('table.importance')" clearable style="width: 90px" class="filter-item">-->
+      <!--        <el-option v-for="item in importanceOptions" :key="item" :label="item" :value="item" />-->
+      <!--      </el-select>-->
+      <!--      <el-select v-model="listQuery.type" :placeholder="$t('table.type')" clearable class="filter-item" style="width: 130px">-->
+      <!--        <el-option v-for="item in calendarTypeOptions" :key="item.key" :label="item.display_name+'('+item.key+')'" :value="item.key" />-->
+      <!--      </el-select>-->
+      <!--      <el-select v-model="listQuery.sort" style="width: 140px" class="filter-item" @change="handleFilter">-->
+      <!--        <el-option v-for="item in sortOptions" :key="item.key" :label="item.label" :value="item.key" />-->
+      <!--      </el-select>-->
       <el-button v-waves class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">
         {{ $t('table.search') }}
       </el-button>
@@ -47,9 +47,9 @@
 
       <el-table-column :label="$t('table.actions')" align="center" width="400" class-name="small-padding fixed-width">
         <template slot-scope="{row,$index}">
-<!--          <el-button type="primary" size="mini" @click="handleUpdate(row)">-->
-<!--            {{ $t('table.edit') }}-->
-<!--          </el-button>-->
+          <!--          <el-button type="primary" size="mini" @click="handleUpdate(row)">-->
+          <!--            {{ $t('table.edit') }}-->
+          <!--          </el-button>-->
           <el-button v-if="row.status!='deleted'" size="mini" type="danger" @click="handleDelete(row,$index)">
             {{ $t('table.delete') }}
           </el-button>
@@ -63,22 +63,24 @@
       <el-form ref="dataForm" :rules="rules" :model="temp" label-position="left" label-width="110px" style="width: 400px; margin-left:150px;">
         <el-form-item :label="$t('table.imgUrl')" prop="imgUrl">
           <el-upload
+            ref="upload"
             name="file"
             class="upload-demo"
-            ref="upload"
-            action="no"
+            action="http://localhost:8091/unbo"
+            :before-upload="beforeUpload"
             :on-preview="handlePreview"
             :on-remove="handleRemove"
             :file-list="fileList"
-            list-type="picture">
+            list-type="picture"
+          >
             <el-button size="small" type="primary">点击上传</el-button>
             <div slot="tip" class="el-upload__tip">只能上传jpg/png文件，且不超过500kb</div>
           </el-upload>
         </el-form-item>
 
-<!--        <el-form-item :label="$t('table.imgUrl')" prop="imgUrl">-->
-<!--          <el-input v-model="temp.imgUrl" />-->
-<!--        </el-form-item>-->
+        <!--        <el-form-item :label="$t('table.imgUrl')" prop="imgUrl">-->
+        <!--          <el-input v-model="temp.imgUrl" />-->
+        <!--        </el-form-item>-->
       </el-form>
       <div slot="footer" class="dialog-footer">
         <el-button @click="dialogFormVisible = false">
@@ -164,7 +166,7 @@ export default {
       },
       importanceOptions: [1, 2, 3],
       calendarTypeOptions,
-      sortOptions: [{ label: 'ID Descending', key: '-id' },{ label: 'ID Ascending', key: '+id' }],
+      sortOptions: [{ label: 'ID Descending', key: '-id' }, { label: 'ID Ascending', key: '+id' }],
       statusOptions: ['published', 'draft', 'deleted'],
       showReviewer: false,
       temp: {
@@ -205,11 +207,15 @@ export default {
     this.getList()
   },
   methods: {
+    beforeUpload(file) {
+      console.log(file)
+      this.getList()
+    },
     handleRemove(file, fileList) {
-      console.log(file, fileList);
+      console.log(file, fileList)
     },
     handlePreview(file) {
-      console.log(file);
+      console.log(file)
     },
 
     getList() {
@@ -280,14 +286,13 @@ export default {
       })
     },
     createData() {
-      this.$refs.upload.submit();
+      this.$refs.upload.submit()
       this.$refs['dataForm'].validate((valid) => {
         if (valid) {
           // this.temp.id = parseInt(Math.random() * 100) + 1024 // mock a id
           // this.temp.author = 'vue-element-admin'
 
           createArticle(this.temp).then(() => {
-
             this.list.unshift(this.temp)
             this.dialogFormVisible = false
             this.$notify({
@@ -316,7 +321,7 @@ export default {
           tempData.createTime = +new Date(tempData.createTime) // change Thu Nov 30 2017 16:41:05 GMT+0800 (CST) to 1512031311464
           updateArticle(tempData).then(() => {
             const index = this.list.findIndex(v => v.id === this.temp.id)
-            this.$refs.upload.submit();
+            this.$refs.upload.submit()
             this.list.splice(index, 1, this.temp)
             this.dialogFormVisible = false
             this.$notify({
