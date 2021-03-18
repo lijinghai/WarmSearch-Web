@@ -36,7 +36,7 @@
               {{ $t('navbar.dashboard') }}
             </el-dropdown-item>
           </router-link>
-          <a target="_blank" href="https://github.com/Dorian1015/SearchU">
+          <a target="_blank" href="https://github.com/Dorian1015/WarmSearch-Web">
             <el-dropdown-item>
               {{ $t('navbar.github') }}
             </el-dropdown-item>
