@@ -66,7 +66,7 @@
             ref="upload"
             name="file"
             class="upload-demo"
-            action="http://localhost:8091/unbo"
+            action="http://localhost:8091/unbo   "
             :on-success="beforeUpload"
             :on-preview="handlePreview"
             :on-remove="handleRemove"
