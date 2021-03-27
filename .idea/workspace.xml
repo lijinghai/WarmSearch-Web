@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ab4b4401-c46c-43a2-8d2b-64912233e88f" name="Default Changelist" comment="后台管理系统的前台页面源码">
+    <list default="true" id="ab4b4401-c46c-43a2-8d2b-64912233e88f" name="Default Changelist" comment="2021 3.28 说明">
+      <change afterPath="$PROJECT_DIR$/README.assets/039D3F96.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.assets/0E503FDA.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.assets/clip_image002.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.assets/image-20210326004631857.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.assets/image-20210327001243579.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.assets/image-20210327001638024.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.assets/image-20210327001747782.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.assets/image-20210327001838330.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.assets/image-20210327002845431.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.assets/image-20210327003110626.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.assets/image-20210327003137254.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.assets/image-20210327003428898.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.assets/image-20210327003455879.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.assets/image-20210327003533589.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.assets/weixing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.assets/zhifubao.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +45,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -38,6 +54,11 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Desktop\大创\Code\font\WarmSearch-Web" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -48,6 +69,8 @@
       <option name="presentableId" value="Default" />
       <updated>1616077729717</updated>
       <workItem from="1616077731022" duration="2112000" />
+      <workItem from="1616858954255" duration="1322000" />
+      <workItem from="1616864544418" duration="419000" />
     </task>
     <task id="LOCAL-00001" summary="后台管理系统的前台页面源码">
       <created>1616079387773</created>
@@ -56,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616079387773</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="2021 3.28 说明">
+      <created>1616864810821</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1616864810821</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -72,9 +102,11 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="后台管理系统的前台页面源码" />
-    <option name="LAST_COMMIT_MESSAGE" value="后台管理系统的前台页面源码" />
+    <MESSAGE value="2021 3.28 说明" />
+    <option name="LAST_COMMIT_MESSAGE" value="2021 3.28 说明" />
   </component>
 </project>
