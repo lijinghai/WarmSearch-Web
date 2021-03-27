@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ab4b4401-c46c-43a2-8d2b-64912233e88f" name="Default Changelist" comment="后台管理系统的前台页面源码">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +29,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -48,6 +48,7 @@
       <option name="presentableId" value="Default" />
       <updated>1616077729717</updated>
       <workItem from="1616077731022" duration="2112000" />
+      <workItem from="1616858954255" duration="1322000" />
     </task>
     <task id="LOCAL-00001" summary="后台管理系统的前台页面源码">
       <created>1616079387773</created>
@@ -72,6 +73,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="后台管理系统的前台页面源码" />
