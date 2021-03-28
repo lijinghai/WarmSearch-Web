@@ -2,22 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab4b4401-c46c-43a2-8d2b-64912233e88f" name="Default Changelist" comment="2021 3.28 说明">
-      <change afterPath="$PROJECT_DIR$/README.assets/039D3F96.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.assets/0E503FDA.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.assets/clip_image002.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.assets/image-20210326004631857.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.assets/image-20210327001243579.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.assets/image-20210327001638024.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.assets/image-20210327001747782.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.assets/image-20210327001838330.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.assets/image-20210327002845431.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.assets/image-20210327003110626.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.assets/image-20210327003137254.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.assets/image-20210327003428898.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.assets/image-20210327003455879.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.assets/image-20210327003533589.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.assets/weixing.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.assets/zhifubao.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +70,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616864810821</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="2021 3.28 说明">
+      <created>1616868018029</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1616868018029</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
