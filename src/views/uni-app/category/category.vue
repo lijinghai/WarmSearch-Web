@@ -2,15 +2,6 @@
   <div class="app-container">
     <div class="filter-container">
       <el-input v-model="listQuery.id" :placeholder="$t('table.id')" style="width: 200px;" class="filter-item" @keyup.enter.native="handleFilter" />
-      <!--      <el-select v-model="listQuery.importance" :placeholder="$t('table.importance')" clearable style="width: 90px" class="filter-item">-->
-      <!--        <el-option v-for="item in importanceOptions" :key="item" :label="item" :value="item" />-->
-      <!--      </el-select>-->
-      <!--      <el-select v-model="listQuery.type" :placeholder="$t('table.type')" clearable class="filter-item" style="width: 130px">-->
-      <!--        <el-option v-for="item in calendarTypeOptions" :key="item.key" :label="item.display_name+'('+item.key+')'" :value="item.key" />-->
-      <!--      </el-select>-->
-      <!--      <el-select v-model="listQuery.sort" style="width: 140px" class="filter-item" @change="handleFilter">-->
-      <!--        <el-option v-for="item in sortOptions" :key="item.key" :label="item.label" :value="item.key" />-->
-      <!--      </el-select>-->
       <el-button v-waves class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">
         {{ $t('table.search') }}
       </el-button>
@@ -213,30 +204,8 @@ export default {
     },
     resetTemp() {
       this.temp = {
-        // id: undefined,
-        // importance: 1,
-        // remark: '',
-        // timestamp: new Date(),
-        // title: '',
-        // status: 'published',
-        // type: ''
         id: undefined,
         ctitle: ''
-        // imgurl: '',
-        // imgname: '',
-        // imgdesc: '',
-        // status: '',
-        // createTime: new Date(),
-        // lostname: '',
-        // contact: '',
-        // gid: '',
-        // username: '',
-        // password: '',
-        // profession: '',
-        // article: '',
-        // phoneNum: '',
-        // createTime: new Date(),
-        // updateTime: new Date()
       }
     },
     handleCreate() {
@@ -250,8 +219,6 @@ export default {
     createData() {
       this.$refs['dataForm'].validate((valid) => {
         if (valid) {
-          // this.temp.id = parseInt(Math.random() * 100) + 1024 // mock a id
-          // this.temp.author = 'vue-element-admin'
           createArticle(this.temp).then(() => {
             this.list.unshift(this.temp)
             this.dialogFormVisible = false

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/WarmSearch.iml" filepath="$PROJECT_DIR$/.idea/WarmSearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/WarmSearch-Web.iml" filepath="$PROJECT_DIR$/.idea/WarmSearch-Web.iml" />
     </modules>
   </component>
 </project>
