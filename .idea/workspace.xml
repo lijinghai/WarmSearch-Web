@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b92f08fb-89b4-4ad6-841a-cece253d703d" name="Default Changelist" comment="2021 4.30 修改" />
+    <list default="true" id="11ca8c05-744a-4b96-a99e-5756cbd70b82" name="Default Changelist" comment="2021 5.2 修改">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/uni-app/sFind/sFind.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/uni-app/sFind/sFind.vue" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +18,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1rsXgaUhyrbvjaVoYaAnsRDxIfH" />
+  <component name="ProjectId" id="1rsZIlQbB0oXzVR51XPyNy6h0dw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -26,29 +29,49 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="ts.external.directory.path" value="D:\NewFile WebStorm\WebStorm 2021.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b92f08fb-89b4-4ad6-841a-cece253d703d" name="Default Changelist" comment="" />
-      <created>1619765889653</created>
+      <changelist id="11ca8c05-744a-4b96-a99e-5756cbd70b82" name="Default Changelist" comment="" />
+      <created>1619766683484</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1619765889653</updated>
-      <workItem from="1619765895187" duration="363000" />
+      <updated>1619766683484</updated>
+      <workItem from="1619766688183" duration="960000" />
+      <workItem from="1619768907570" duration="756000" />
+      <workItem from="1619883561564" duration="2517000" />
+      <workItem from="1619932642271" duration="1030000" />
     </task>
     <task id="LOCAL-00001" summary="2021 4.30 修改">
-      <created>1619766158914</created>
+      <created>1619766873039</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1619766158914</updated>
+      <updated>1619766873039</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="2021 4.30 修改">
+      <created>1619766974544</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1619766974544</updated>
+    </task>
+    <task id="LOCAL-00003" summary="2021 5.2 修改">
+      <created>1619885756769</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1619885756769</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -64,9 +87,11 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2021 4.30 修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="2021 4.30 修改" />
+    <MESSAGE value="2021 5.2 修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="2021 5.2 修改" />
   </component>
 </project>
