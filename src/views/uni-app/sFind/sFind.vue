@@ -2,6 +2,15 @@
   <div class="app-container">
     <div class="filter-container">
       <el-input v-model="listQuery.id" :placeholder="$t('table.id')" style="width: 200px;" class="filter-item" @keyup.enter.native="handleFilter" />
+      <!--      <el-select v-model="listQuery.importance" :placeholder="$t('table.importance')" clearable style="width: 90px" class="filter-item">-->
+      <!--        <el-option v-for="item in importanceOptions" :key="item" :label="item" :value="item" />-->
+      <!--      </el-select>-->
+      <!--      <el-select v-model="listQuery.type" :placeholder="$t('table.type')" clearable class="filter-item" style="width: 130px">-->
+      <!--        <el-option v-for="item in calendarTypeOptions" :key="item.key" :label="item.display_name+'('+item.key+')'" :value="item.key" />-->
+      <!--      </el-select>-->
+      <!--      <el-select v-model="listQuery.sort" style="width: 140px" class="filter-item" @change="handleFilter">-->
+      <!--        <el-option v-for="item in sortOptions" :key="item.key" :label="item.label" :value="item.key" />-->
+      <!--      </el-select>-->
       <el-button v-waves class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">
         {{ $t('table.search') }}
       </el-button>
@@ -32,6 +41,7 @@
       </el-table-column>
       <el-table-column label="图片" width="180px" align="center">
         <template slot-scope="{row}">
+          <!--          <span>{{ row.imgUrl }}</span>-->
           <img :src="row.fimg" style="width:120px; height:100px">
         </template>
       </el-table-column>
@@ -40,6 +50,39 @@
           <span>{{ row.fclick }}</span>
         </template>
       </el-table-column>
+      <!--      <el-table-column label="描述" width="120px" align="center">-->
+      <!--        <template slot-scope="{row}">-->
+      <!--          <span>{{ row.fclick}}</span>-->
+      <!--        </template>-->
+      <!--      </el-table-column>-->
+      <!--      <el-table-column label="状态" width="120px" align="center">-->
+      <!--        <template slot-scope="{row}">-->
+      <!--          <span>{{ row.status }}</span>-->
+      <!--        </template>-->
+      <!--      </el-table-column>-->
+      <!--      <el-table-column label="联系人" width="140px" align="center">-->
+      <!--        <template slot-scope="{row}">-->
+      <!--          <span>{{ row.lostname }}</span>-->
+      <!--        </template>-->
+      <!--      </el-table-column>-->
+
+      <!--      <el-table-column label="联系方式" type="date" width="200px" align="center">-->
+      <!--        <template slot-scope="{row}">-->
+      <!--          <span>{{ row.contact}}</span>-->
+      <!--        </template>-->
+      <!--      </el-table-column>-->
+
+      <!--      <el-table-column label="类型" type="date" width="170px" align="center">-->
+      <!--        <template slot-scope="{row}">-->
+      <!--          <span>{{ row.gid}}</span>-->
+      <!--        </template>-->
+      <!--      </el-table-column>-->
+
+      <!--      <el-table-column label="发布时间" type="date" width="200px" align="center">-->
+      <!--        <template slot-scope="{row}">-->
+      <!--          <span>{{ row.createTime | parseTime('{y}-{m}-{d} {h}:{i}:{s}') }}</span>-->
+      <!--        </template>-->
+      <!--      </el-table-column>-->
       <el-table-column :label="$t('table.actions')" align="center" width="370" class-name="small-padding fixed-width">
         <template slot-scope="{row,$index}">
           <el-button type="primary" size="mini" @click="handleUpdate(row)">
@@ -53,47 +96,49 @@
     </el-table>
 
     <pagination v-show="total>0" :total="total" :page.sync="listQuery.page" :limit.sync="listQuery.limit" @pagination="getList" />
+
     <el-dialog :title="textMap[dialogStatus]" :visible.sync="dialogFormVisible">
       <el-form ref="dataForm" :rules="rules" :model="temp" label-position="left" label-width="110px" style="width: 400px; margin-left:150px;">
 
         <el-form-item :label="$t('table.fimg')" prop="fimg">
           <el-upload
+            ref="upload"
             name="file"
             class="upload-demo"
-            ref="upload"
             action="http://localhost:8091/sfind"
             :on-preview="handlePreview"
             :on-remove="handleRemove"
             :file-list="fileList"
-            list-type="picture">
+            list-type="picture"
+          >
             <el-button size="small" type="primary">点击上传</el-button>
             <div slot="tip" class="el-upload__tip">只能上传jpg/png文件，且不超过500kb</div>
           </el-upload>
         </el-form-item>
 
-<!--        <el-form-item :label="$t('table.imgdesc')" prop="imgdesc">-->
-<!--          <el-input v-model="temp.imgdesc" />-->
-<!--        </el-form-item>-->
+        <!--        <el-form-item :label="$t('table.imgdesc')" prop="imgdesc">-->
+        <!--          <el-input v-model="temp.imgdesc" />-->
+        <!--        </el-form-item>-->
 
-<!--        <el-form-item :label="$t('table.imgname')" prop="imgname">-->
-<!--          <el-input v-model="temp.imgname" />-->
-<!--        </el-form-item>-->
+        <!--        <el-form-item :label="$t('table.imgname')" prop="imgname">-->
+        <!--          <el-input v-model="temp.imgname" />-->
+        <!--        </el-form-item>-->
 
-<!--        <el-form-item :label="$t('table.status')" prop="status">-->
-<!--          <el-input v-model="temp.status" />-->
-<!--        </el-form-item>-->
+        <!--        <el-form-item :label="$t('table.status')" prop="status">-->
+        <!--          <el-input v-model="temp.status" />-->
+        <!--        </el-form-item>-->
 
-<!--        <el-form-item :label="$t('table.lostname')" prop="lostname">-->
-<!--          <el-input v-model="temp.lostname" />-->
-<!--        </el-form-item>-->
+        <!--        <el-form-item :label="$t('table.lostname')" prop="lostname">-->
+        <!--          <el-input v-model="temp.lostname" />-->
+        <!--        </el-form-item>-->
 
-<!--        <el-form-item :label="$t('table.contact')" prop="contact">-->
-<!--          <el-input v-model="temp.contact" />-->
-<!--        </el-form-item>-->
+        <!--        <el-form-item :label="$t('table.contact')" prop="contact">-->
+        <!--          <el-input v-model="temp.contact" />-->
+        <!--        </el-form-item>-->
 
-<!--        <el-form-item :label="$t('table.gid')" prop="gid">-->
-<!--          <el-input v-model="temp.gid" />-->
-<!--        </el-form-item>-->
+        <!--        <el-form-item :label="$t('table.gid')" prop="gid">-->
+        <!--          <el-input v-model="temp.gid" />-->
+        <!--        </el-form-item>-->
 
       </el-form>
       <div slot="footer" class="dialog-footer">
@@ -171,7 +216,7 @@ export default {
         limit: 10,
         id: undefined,
         fimg: '',
-        fclick:'',
+        fclick: '',
         // imgurl: '',
         // imgname: '',
         // imgdesc: '',
@@ -195,13 +240,13 @@ export default {
       },
       importanceOptions: [1, 2, 3],
       calendarTypeOptions,
-      sortOptions: [{ label: 'ID Descending', key: '-id' },{ label: 'ID Ascending', key: '+id' }],
+      sortOptions: [{ label: 'ID Descending', key: '-id' }, { label: 'ID Ascending', key: '+id' }],
       statusOptions: ['published', 'draft', 'deleted'],
       showReviewer: false,
       temp: {
         id: undefined,
         fimg: '',
-        fclick:''
+        fclick: ''
         // imgurl: '',
         // imgname: '',
         // imgdesc: '',
@@ -246,10 +291,10 @@ export default {
   },
   methods: {
     handleRemove(file, fileList) {
-      console.log(file, fileList);
+      console.log(file, fileList)
     },
     handlePreview(file) {
-      console.log(file);
+      console.log(file)
     },
 
     getList() {
@@ -302,7 +347,7 @@ export default {
         // type: ''
         id: undefined,
         fimg: '',
-        fclick:''
+        fclick: ''
         // imgurl: '',
         // imgname: '',
         // imgdesc: '',
@@ -329,7 +374,7 @@ export default {
       })
     },
     createData() {
-      this.$refs.upload.submit();
+      this.$refs.upload.submit()
       this.$refs['dataForm'].validate((valid) => {
         if (valid) {
           // this.temp.id = parseInt(Math.random() * 100) + 1024 // mock a id

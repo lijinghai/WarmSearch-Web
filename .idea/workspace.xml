@@ -4,6 +4,7 @@
     <list default="true" id="11ca8c05-744a-4b96-a99e-5756cbd70b82" name="Default Changelist" comment="2021 5.2 修改">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/uni-app/sFind/sFind.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/uni-app/sFind/sFind.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/user/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/user/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +49,7 @@
       <workItem from="1619766688183" duration="960000" />
       <workItem from="1619768907570" duration="756000" />
       <workItem from="1619883561564" duration="2517000" />
-      <workItem from="1619932642271" duration="1030000" />
+      <workItem from="1619932642271" duration="6055000" />
     </task>
     <task id="LOCAL-00001" summary="2021 4.30 修改">
       <created>1619766873039</created>
@@ -71,7 +72,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619885756769</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="2021 5.2 修改">
+      <created>1619935830774</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1619935830774</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
