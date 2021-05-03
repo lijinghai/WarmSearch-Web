@@ -108,6 +108,21 @@ export const asyncRoutes = [
   tableRouter,
   nestedRouter,
   chartsRouter,
+  // PC端最新物品信息管理
+  {
+    path: '/new',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/new/index'),
+        name: 'New',
+        meta: { title: 'New',
+          icon: 'international'
+        }
+      }
+    ]
+  },
   // 首页轮播图
   {
     path: '/i18n',
