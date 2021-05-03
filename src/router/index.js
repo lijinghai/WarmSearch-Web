@@ -123,6 +123,21 @@ export const asyncRoutes = [
       }
     ]
   },
+  // PC端轮播图信息管理
+  {
+    path: '/pcunbo',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/pcUnbo/index'),
+        name: 'pcunbo',
+        meta: { title: 'pcunbo',
+          icon: 'international'
+        }
+      }
+    ]
+  },
   // 首页轮播图
   {
     path: '/i18n',

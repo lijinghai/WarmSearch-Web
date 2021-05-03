@@ -1,5 +1,6 @@
 export default {
   route: {
+    pcunbo: 'PC端轮播图信息管理',
     New: 'PC端最新物品信息管理',
     findList: '待招领物品详情信息',
     sFind: '招领信息',
