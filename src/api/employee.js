@@ -26,7 +26,7 @@ export function fetchPv(pv) {
 
 export function createArticle(data) {
   return request({
-    url: '/pcuser',
+    url: '/pcuser/add',
     method: 'post',
     data
   })
@@ -34,7 +34,7 @@ export function createArticle(data) {
 
 export function updateArticle(data) {
   return request({
-    url: '/user',
+    url: '/pcuser',
     method: 'put',
     data
   })
@@ -42,7 +42,7 @@ export function updateArticle(data) {
 
 export function deleteUser(id) {
   return request({
-    url: '/user/delete',
+    url: '/pcuser/delete',
     method: 'post',
     params: { id }
   })
