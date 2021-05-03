@@ -11,7 +11,7 @@ export default {
     documentation: '文档',
     guide: '引导页',
     UserManage: '用户信息管理',
-    StudentManage: '学生信息管理',
+    StudentManage: 'PC端用户信息',
     TeacherManage: '老师信息管理',
     rolePermission: '角色权限',
     GoodsManage: '物品信息管理',

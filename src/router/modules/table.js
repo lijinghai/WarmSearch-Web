@@ -20,16 +20,16 @@ const tableRouter = {
       meta: { title: 'StudentManage',
         icon: 'people'
       }
-    },
-    // 老师管理
-    {
-      path: 'dynamic-table',
-      component: () => import('@/views/teacher/index'),
-      name: 'TeacherManage',
-      meta: { title: 'TeacherManage',
-        icon: 'user'
-      }
     }
+    // // 老师管理
+    // {
+    //   path: 'dynamic-table',
+    //   component: () => import('@/views/teacher/index'),
+    //   name: 'TeacherManage',
+    //   meta: { title: 'TeacherManage',
+    //     icon: 'user'
+    //   }
+    // }
     // {
     //   path: 'dynamic-table',
     //   component: () => import('@/views/table/dynamic-table/index'),

@@ -208,12 +208,8 @@ export default {
       this.temp = {
         id: undefined,
         username: '',
-        password: '',
-        profession: '',
-        article: '',
-        phoneNum: '',
-        createTime: new Date(),
-        updateTime: new Date()
+        password: ''
+
       }
     },
     handleCreate() {
