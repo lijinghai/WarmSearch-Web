@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="11ca8c05-744a-4b96-a99e-5756cbd70b82" name="Default Changelist" comment="2021 5.2 修改">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/uni-app/sFind/sFind.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/uni-app/sFind/sFind.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/user/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/user/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/employee.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/employee.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/uni-app/unbo/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/uni-app/unbo/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +49,14 @@
       <workItem from="1619766688183" duration="960000" />
       <workItem from="1619768907570" duration="756000" />
       <workItem from="1619883561564" duration="2517000" />
-      <workItem from="1619932642271" duration="6055000" />
+      <workItem from="1619932642271" duration="6470000" />
+      <workItem from="1619955152359" duration="3599000" />
+      <workItem from="1619966757690" duration="1361000" />
+      <workItem from="1619970386776" duration="966000" />
+      <workItem from="1619973091472" duration="173000" />
+      <workItem from="1619976129453" duration="2774000" />
+      <workItem from="1620022542431" duration="87000" />
+      <workItem from="1620026018359" duration="4260000" />
     </task>
     <task id="LOCAL-00001" summary="2021 4.30 修改">
       <created>1619766873039</created>
@@ -79,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619935830774</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="2021 5.2 修改">
+      <created>1619945771347</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1619945771347</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

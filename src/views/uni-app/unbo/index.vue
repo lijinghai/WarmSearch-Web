@@ -77,10 +77,6 @@
             <div slot="tip" class="el-upload__tip">只能上传jpg/png文件，且不超过500kb</div>
           </el-upload>
         </el-form-item>
-
-        <!--        <el-form-item :label="$t('table.imgUrl')" prop="imgUrl">-->
-        <!--          <el-input v-model="temp.imgUrl" />-->
-        <!--        </el-form-item>-->
       </el-form>
       <div slot="footer" class="dialog-footer">
         <el-button @click="dialogFormVisible = false">
