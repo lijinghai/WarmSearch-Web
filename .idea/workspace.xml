@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="11ca8c05-744a-4b96-a99e-5756cbd70b82" name="Default Changelist" comment="2021 5.2 修改">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/employee.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/employee.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/uni-app/unbo/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/uni-app/unbo/index.vue" afterDir="false" />
-    </list>
+    <list default="true" id="11ca8c05-744a-4b96-a99e-5756cbd70b82" name="Default Changelist" comment="2021 5.3 说明" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,7 +52,7 @@
       <workItem from="1619973091472" duration="173000" />
       <workItem from="1619976129453" duration="2774000" />
       <workItem from="1620022542431" duration="87000" />
-      <workItem from="1620026018359" duration="4260000" />
+      <workItem from="1620026018359" duration="4562000" />
     </task>
     <task id="LOCAL-00001" summary="2021 4.30 修改">
       <created>1619766873039</created>
@@ -93,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619945771347</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="2021 5.3 说明">
+      <created>1620040039419</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1620040039419</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +117,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2021 4.30 修改" />
     <MESSAGE value="2021 5.2 修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="2021 5.2 修改" />
+    <MESSAGE value="2021 5.3 说明" />
+    <option name="LAST_COMMIT_MESSAGE" value="2021 5.3 说明" />
   </component>
 </project>
