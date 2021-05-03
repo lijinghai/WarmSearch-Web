@@ -2,12 +2,6 @@
   <div class="app-container">
     <div class="filter-container">
       <el-input v-model="listQuery.id" :placeholder="$t('table.id')" style="width: 200px;" class="filter-item" @keyup.enter.native="handleFilter" />
-      <el-select v-model="listQuery.importance" :placeholder="$t('table.importance')" clearable style="width: 90px" class="filter-item">
-        <el-option v-for="item in importanceOptions" :key="item" :label="item" :value="item" />
-      </el-select>
-      <el-select v-model="listQuery.type" :placeholder="$t('table.type')" clearable class="filter-item" style="width: 130px">
-        <el-option v-for="item in calendarTypeOptions" :key="item.key" :label="item.display_name+'('+item.key+')'" :value="item.key" />
-      </el-select>
       <el-select v-model="listQuery.sort" style="width: 140px" class="filter-item" @change="handleFilter">
         <el-option v-for="item in sortOptions" :key="item.key" :label="item.label" :value="item.key" />
       </el-select>
@@ -49,33 +43,7 @@
           <span>{{ row.password }}</span>
         </template>
       </el-table-column>
-      <el-table-column label="专业" width="120px" align="center">
-        <template slot-scope="{row}">
-          <span>{{ row.profession }}</span>
-        </template>
-      </el-table-column>
-      <el-table-column label="物品名" width="120px" align="center">
-        <template slot-scope="{row}">
-          <span>{{ row.article }}</span>
-        </template>
-      </el-table-column>
-      <el-table-column label="电话号码" width="140px" align="center">
-        <template slot-scope="{row}">
-          <span>{{ row.phoneNum }}</span>
-        </template>
-      </el-table-column>
 
-      <el-table-column label="创建时间" type="date" width="270px" align="center">
-        <template slot-scope="{row}">
-          <span>{{ row.createTime | parseTime('{y}-{m}-{d} {h}:{i}:{s}') }}</span>
-        </template>
-      </el-table-column>
-
-      <el-table-column label="更新时间" type="date" width="270px" align="center">
-        <template slot-scope="{row}">
-          <span>{{ row.updateTime | parseTime('{y}-{m}-{d} {h}:{i}:{s}') }}</span>
-        </template>
-      </el-table-column>
       <el-table-column :label="$t('table.actions')" align="center" width="400" class-name="small-padding fixed-width">
         <template slot-scope="{row,$index}">
           <el-button type="primary" size="mini" @click="handleUpdate(row)">
@@ -98,18 +66,6 @@
 
         <el-form-item :label="$t('table.password')" prop="password">
           <el-input v-model="temp.password" />
-        </el-form-item>
-
-        <el-form-item :label="$t('table.profession')" prop="profession">
-          <el-input v-model="temp.profession" />
-        </el-form-item>
-
-        <el-form-item :label="$t('table.article')" prop="article">
-          <el-input v-model="temp.article" />
-        </el-form-item>
-
-        <el-form-item :label="$t('table.phoneNum')" prop="phoneNum">
-          <el-input v-model="temp.phoneNum" />
         </el-form-item>
       </el-form>
       <div slot="footer" class="dialog-footer">
@@ -182,32 +138,17 @@ export default {
         id: undefined,
         username: '',
         password: '',
-        profession: '',
-        article: '',
-        phoneNum: '',
-        createTime: new Date(),
-        updateTime: new Date(),
-        // importance: undefined,
-        // title: undefined,
-        // id: undefined,
-        // type: undefined,
         sort: '+id'
       },
       importanceOptions: [1, 2, 3],
       calendarTypeOptions,
-      sortOptions: [{ label: 'ID Ascending', key: '+id' }, { label: 'ID Descending', key: '-id' }],
+      sortOptions: [{ label: 'ID 升序', key: '+id' }, { label: 'ID 降序', key: '-id' }],
       statusOptions: ['published', 'draft', 'deleted'],
       showReviewer: false,
       temp: {
         id: undefined,
-        // timestamp: new Date(),
         username: '',
-        password: '',
-        profession: '',
-        article: '',
-        phoneNum: '',
-        createTime: new Date(),
-        updateTime: new Date()
+        password: ''
       },
       dialogFormVisible: false,
       dialogStatus: '',
@@ -218,14 +159,8 @@ export default {
       dialogPvVisible: false,
       pvData: [],
       rules: {
-        // type: [{ required: true, message: 'type is required', trigger: 'change' }],
-        // timestamp: [{ type: 'date', required: true, message: 'timestamp is required', trigger: 'change' }],
-        // title: [{ required: true, message: 'title is required', trigger: 'blur' }]
         username: [{ required: true, message: '姓名必须输入', trigger: 'change' }],
-        password: [{ required: true, message: '密码必须输入', trigger: 'change' }],
-        profession: [{ required: true, message: '专业必须输入', trigger: 'change' }],
-        article: [{ required: true, message: '物品名必须输入', trigger: 'change' }],
-        phoneNum: [{ required: true, message: '电话号码必须输入', trigger: 'change' }]
+        password: [{ required: true, message: '密码必须输入', trigger: 'change' }]
       },
       downloadLoading: false
     }
@@ -239,10 +174,6 @@ export default {
       fetchList(this.listQuery).then(response => {
         this.list = response.data.items
         this.total = response.data.total
-        // this.size = response.data.size
-        // this.current = response.data.current
-        // this.pages = response.data.pages
-        // Just to simulate the time of the request
         setTimeout(() => {
           this.listLoading = false
         }, 1.5 * 1000)
@@ -275,13 +206,6 @@ export default {
     },
     resetTemp() {
       this.temp = {
-        // id: undefined,
-        // importance: 1,
-        // remark: '',
-        // timestamp: new Date(),
-        // title: '',
-        // status: 'published',
-        // type: ''
         id: undefined,
         username: '',
         password: '',
@@ -303,8 +227,6 @@ export default {
     createData() {
       this.$refs['dataForm'].validate((valid) => {
         if (valid) {
-          // this.temp.id = parseInt(Math.random() * 100) + 1024 // mock a id
-          // this.temp.author = 'vue-element-admin'
           createArticle(this.temp).then(() => {
             this.list.unshift(this.temp)
             this.dialogFormVisible = false
