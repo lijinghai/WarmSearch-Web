@@ -18,7 +18,7 @@ export default {
     Precious: 'PC端急需物品信息管理',
     Pens: '文具类物品管理',
     Monitor: '系统监控',
-    log: '操作信息',
+    log: 'PC端物品详情信息管理',
     Online: '用户访问量',
     directivePermission: '指令权限',
     icons: '图标',

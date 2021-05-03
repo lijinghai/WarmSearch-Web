@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="11ca8c05-744a-4b96-a99e-5756cbd70b82" name="Default Changelist" comment="2021 5.3 PC端用户管理操作">
+    <list default="true" id="11ca8c05-744a-4b96-a99e-5756cbd70b82" name="Default Changelist" comment="2021 5.4 PC端急需物品管理">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/electronic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/electronic.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lang/zh.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lang/zh.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/modules/nested.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/modules/nested.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/modules/charts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/modules/charts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/goods/electronic/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/goods/electronic/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/goods/pen/index.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/monitor/log/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/monitor/log/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +58,8 @@
       <workItem from="1619973091472" duration="173000" />
       <workItem from="1619976129453" duration="2774000" />
       <workItem from="1620022542431" duration="87000" />
-      <workItem from="1620026018359" duration="19578000" />
+      <workItem from="1620026018359" duration="20147000" />
+      <workItem from="1620060832264" duration="1412000" />
     </task>
     <task id="LOCAL-00001" summary="2021 4.30 修改">
       <created>1619766873039</created>
@@ -138,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620044656091</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="2021 5.4 PC端急需物品管理">
+      <created>1620060128442</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1620060128442</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +169,7 @@
     <MESSAGE value="2021 5.3 说明" />
     <MESSAGE value="2021 5.3 PC端用户管理" />
     <MESSAGE value="2021 5.3 PC端用户管理操作" />
-    <option name="LAST_COMMIT_MESSAGE" value="2021 5.3 PC端用户管理操作" />
+    <MESSAGE value="2021 5.4 PC端急需物品管理" />
+    <option name="LAST_COMMIT_MESSAGE" value="2021 5.4 PC端急需物品管理" />
   </component>
 </project>

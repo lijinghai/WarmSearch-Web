@@ -223,7 +223,7 @@ export default {
         createTime: '',
         updatedTime: '',
         panelId: '1',
-        type: '0',
+        type: '2',
         sort: '+id'
       },
       importanceOptions: [1, 2, 3],

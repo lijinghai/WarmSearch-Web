@@ -12,14 +12,14 @@ const chartsRouter = {
     icon: 'international'
   },
   children: [
-    {
-      path: 'mix-chart',
-      component: () => import('@/views/charts/mix-chart'),
-      name: 'Online',
-      meta: { title: 'Online',
-        icon: 'eye-open'
-      }
-    },
+    // {
+    //   path: 'mix-chart',
+    //   component: () => import('@/views/charts/mix-chart'),
+    //   name: 'Online',
+    //   meta: { title: 'Online',
+    //     icon: 'eye-open'
+    //   }
+    // },
     {
       path: 'keyboard',
       component: () => import('@/views/monitor/log/index'),
