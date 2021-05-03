@@ -138,7 +138,7 @@ export const asyncRoutes = [
       }
     ]
   },
-  // 首页轮播图
+  // 微信小程序端轮播图信息管理
   {
     path: '/i18n',
     component: Layout,

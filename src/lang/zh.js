@@ -8,7 +8,7 @@ export default {
     category: '寻物类别',
     goodsFirst: '首页展示的物品信息',
     imgUrl: '图片',
-    UnBo: '首页轮播图',
+    UnBo: '小程序端轮播图信息管理',
     dashboard: '首页',
     documentation: '文档',
     guide: '引导页',

@@ -26,7 +26,7 @@ export function fetchPv(pv) {
 
 export function createArticle(data) {
   return request({
-    url: '/unbo',
+    url: '/unbo/all',
     method: 'post',
     data
   })

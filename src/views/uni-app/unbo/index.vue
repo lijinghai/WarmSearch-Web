@@ -1,16 +1,15 @@
+<!--
+ * @Description: 微信小程序端轮播图信息管理
+ * @Author: lijinghailjh@163.com
+ * @Date: 2021/5/4
+ -->
 <template>
   <div class="app-container">
     <div class="filter-container">
       <el-input v-model="listQuery.id" :placeholder="$t('table.id')" style="width: 200px;" class="filter-item" @keyup.enter.native="handleFilter" />
-      <!--      <el-select v-model="listQuery.importance" :placeholder="$t('table.importance')" clearable style="width: 90px" class="filter-item">-->
-      <!--        <el-option v-for="item in importanceOptions" :key="item" :label="item" :value="item" />-->
-      <!--      </el-select>-->
-      <!--      <el-select v-model="listQuery.type" :placeholder="$t('table.type')" clearable class="filter-item" style="width: 130px">-->
-      <!--        <el-option v-for="item in calendarTypeOptions" :key="item.key" :label="item.display_name+'('+item.key+')'" :value="item.key" />-->
-      <!--      </el-select>-->
-      <!--      <el-select v-model="listQuery.sort" style="width: 140px" class="filter-item" @change="handleFilter">-->
-      <!--        <el-option v-for="item in sortOptions" :key="item.key" :label="item.label" :value="item.key" />-->
-      <!--      </el-select>-->
+      <el-select v-model="listQuery.sort" style="width: 140px" class="filter-item" @change="handleFilter">
+        <el-option v-for="item in sortOptions" :key="item.key" :label="item.label" :value="item.key" />
+      </el-select>
       <el-button v-waves class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">
         {{ $t('table.search') }}
       </el-button>
@@ -39,17 +38,16 @@
           <span>{{ row.id }}</span>
         </template>
       </el-table-column>
-      <el-table-column label="图片" align="center">
+      <el-table-column label="图片" width="400px" align="center">
         <template slot-scope="{row}">
-          <img :src="row.imgUrl" style="width:120px; height:100px">
+          <img :src="row.imgUrl " style="width:120px; height:100px">
         </template>
       </el-table-column>
-
-      <el-table-column :label="$t('table.actions')" align="center" class-name="small-padding fixed-width">
+      <el-table-column :label="$t('table.actions')" align="center" width="250" class-name="small-padding fixed-width">
         <template slot-scope="{row,$index}">
-          <!--          <el-button type="primary" size="mini" @click="handleUpdate(row)">-->
-          <!--            {{ $t('table.edit') }}-->
-          <!--          </el-button>-->
+          <el-button type="primary" size="mini" @click="handleUpdate(row)">
+            {{ $t('table.edit') }}
+          </el-button>
           <el-button v-if="row.status!='deleted'" size="mini" type="danger" @click="handleDelete(row,$index)">
             {{ $t('table.delete') }}
           </el-button>
@@ -61,21 +59,52 @@
 
     <el-dialog :title="textMap[dialogStatus]" :visible.sync="dialogFormVisible">
       <el-form ref="dataForm" :rules="rules" :model="temp" label-position="left" label-width="110px" style="width: 400px; margin-left:150px;">
-        <el-form-item :label="$t('table.imgUrl')" prop="imgUrl">
+
+        <el-form-item :label="$t('图片')" prop="imgUrl">
+
           <el-upload
             ref="upload"
             name="file"
             class="upload-demo"
-            action="http://localhost:8091/unbo   "
+            action="http://localhost:8091/upload"
             :on-success="beforeUpload"
-            :on-preview="handlePreview"
             :on-remove="handleRemove"
-            :file-list="fileList"
-            list-type="picture"
+            list-type="picture-card"
           >
-            <el-button size="small" type="primary">点击上传</el-button>
-            <div slot="tip" class="el-upload__tip">只能上传jpg/png文件，且不超过500kb</div>
+            <i slot="default" class="el-icon-plus" />
+            <div slot="file" slot-scope="{file}">
+              <img
+                class="el-upload-list__item-thumbnail"
+                :src="file.url"
+                alt=""
+              >
+              <span class="el-upload-list__item-actions">
+                <span
+                  class="el-upload-list__item-preview"
+                  @click="handlePictureCardPreview(file)"
+                >
+                  <i class="el-icon-zoom-in" />
+                </span>
+                <span
+                  v-if="!disabled"
+                  class="el-upload-list__item-delete"
+                  @click="handleDownload1(file)"
+                >
+                  <i class="el-icon-download" />
+                </span>
+                <span
+                  v-if="!disabled"
+                  class="el-upload-list__item-delete"
+                  @click="handleRemove(file)"
+                >
+                  <i class="el-icon-delete" />
+                </span>
+              </span>
+            </div>
           </el-upload>
+          <el-dialog :visible.sync="dialogVisible">
+            <img width="100%" :src="dialogImageUrl" alt="">
+          </el-dialog>
         </el-form-item>
       </el-form>
       <div slot="footer" class="dialog-footer">
@@ -97,6 +126,7 @@
         <el-button type="primary" @click="dialogPvVisible = false">{{ $t('table.confirm') }}</el-button>
       </span>
     </el-dialog>
+
   </div>
 </template>
 
@@ -137,8 +167,10 @@ export default {
   },
   data() {
     return {
-      fileList: [],
-      tableKey: Math.random(),
+      dialogImageUrl: '',
+      dialogVisible: false,
+      disabled: false,
+      tableKey: 0,
       list: null,
       total: 0,
       listLoading: true,
@@ -147,35 +179,16 @@ export default {
         limit: 10,
         id: undefined,
         imgUrl: '',
-        // username: '',
-        // password: '',
-        // profession: '',
-        // article: '',
-        // phoneNum: '',
-        // createTime: new Date(),
-        // updateTime: new Date(),
-        // importance: undefined,
-        // title: undefined,
-        // id: undefined,
-        // type: undefined,
         sort: '+id'
       },
       importanceOptions: [1, 2, 3],
       calendarTypeOptions,
-      sortOptions: [{ label: 'ID Descending', key: '-id' }, { label: 'ID Ascending', key: '+id' }],
+      sortOptions: [{ label: 'ID 升序', key: '+id' }, { label: 'ID 降序', key: '-id' }],
       statusOptions: ['published', 'draft', 'deleted'],
       showReviewer: false,
       temp: {
         id: undefined,
         imgUrl: ''
-        // timestamp: new Date(),
-        // username: '',
-        // password: '',
-        // profession: '',
-        // article: '',
-        // phoneNum: '',
-        // createTime: new Date(),
-        // updateTime: new Date()
       },
       dialogFormVisible: false,
       dialogStatus: '',
@@ -186,15 +199,7 @@ export default {
       dialogPvVisible: false,
       pvData: [],
       rules: {
-        // type: [{ required: true, message: 'type is required', trigger: 'change' }],
-        // timestamp: [{ type: 'date', required: true, message: 'timestamp is required', trigger: 'change' }],
-        // title: [{ required: true, message: 'title is required', trigger: 'blur' }]
-        // username: [{ required: true, message: '姓名必须输入', trigger: 'change' }],
-        // password: [{ required: true, message: '密码必须输入', trigger: 'change' }],
-        // profession: [{ required: true, message: '专业必须输入', trigger: 'change' }],
-        // article: [{ required: true, message: '物品名必须输入', trigger: 'change' }],
-        // phoneNum: [{ required: true, message: '电话号码必须输入', trigger: 'change' }]
-        // imgUrl: [{ required: true, message: '图片必须输入', trigger: 'change' }]
+        url: [{ required: true, message: '请选择图片', trigger: 'change' }]
       },
       downloadLoading: false
     }
@@ -204,25 +209,27 @@ export default {
   },
   methods: {
     beforeUpload(file) {
-      console.log(file)
-      this.getList()
+      this.temp.imgUrl = file.url
+      console.log(file.url)
     },
-    handleRemove(file, fileList) {
-      console.log(file, fileList)
+    handleRemove(file) {
+      this.dialogImageUrl = file.url
+      console.log(file.response.url)
     },
-    handlePreview(file) {
-      console.log(file)
+    handlePictureCardPreview(file) {
+      this.dialogImageUrl = file.url
+      this.dialogVisible = true
+      console.log(file.url)
     },
-
+    handleDownload1(file) {
+      this.dialogImageUrl = file.url
+      console.log(file.url)
+    },
     getList() {
       this.listLoading = true
       fetchList(this.listQuery).then(response => {
         this.list = response.data.items
         this.total = response.data.total
-        // this.size = response.data.size
-        // this.current = response.data.current
-        // this.pages = response.data.pages
-        // Just to simulate the time of the request
         setTimeout(() => {
           this.listLoading = false
         }, 1.5 * 1000)
@@ -246,7 +253,7 @@ export default {
       }
     },
     sortByID(order) {
-      if (order === 'descending') {
+      if (order === 'ascending') {
         this.listQuery.sort = '+id'
       } else {
         this.listQuery.sort = '-id'
@@ -255,22 +262,8 @@ export default {
     },
     resetTemp() {
       this.temp = {
-        // id: undefined,
-        // importance: 1,
-        // remark: '',
-        // timestamp: new Date(),
-        // title: '',
-        // status: 'published',
-        // type: ''
         id: undefined,
         imgUrl: ''
-        // username: '',
-        // password: '',
-        // profession: '',
-        // article: '',
-        // phoneNum: '',
-        // createTime: new Date(),
-        // updateTime: new Date()
       }
     },
     handleCreate() {
@@ -282,12 +275,8 @@ export default {
       })
     },
     createData() {
-      this.$refs.upload.submit()
       this.$refs['dataForm'].validate((valid) => {
         if (valid) {
-          // this.temp.id = parseInt(Math.random() * 100) + 1024 // mock a id
-          // this.temp.author = 'vue-element-admin'
-
           createArticle(this.temp).then(() => {
             this.list.unshift(this.temp)
             this.dialogFormVisible = false
@@ -317,7 +306,6 @@ export default {
           tempData.createTime = +new Date(tempData.createTime) // change Thu Nov 30 2017 16:41:05 GMT+0800 (CST) to 1512031311464
           updateArticle(tempData).then(() => {
             const index = this.list.findIndex(v => v.id === this.temp.id)
-            this.$refs.upload.submit()
             this.list.splice(index, 1, this.temp)
             this.dialogFormVisible = false
             this.$notify({
