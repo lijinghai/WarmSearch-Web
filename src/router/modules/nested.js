@@ -16,7 +16,7 @@ const nestedRouter = {
       path: 'menu1',
       component: () => import('@/views/goods/electronic/index'), // Parent router-view
       name: 'Precious',
-      // 电子信息
+      // PC端急需物品信息管理
       meta: { title: 'Precious',
         icon: 'star'
       }
@@ -56,16 +56,16 @@ const nestedRouter = {
       //     meta: { title: 'menu1-3' }
       //   }
       // ]
-    },
-    {
-      path: 'menu2',
-      name: 'Pens',
-      // 文具类物品
-      component: () => import('@/views/goods/pen/index'),
-      meta: { title: 'Pens',
-        icon: 'education'
-      }
     }
+    // {
+    //   path: 'menu2',
+    //   name: 'Pens',
+    //   // 文具类物品
+    //   component: () => import('@/views/goods/pen/index'),
+    //   meta: { title: 'Pens',
+    //     icon: 'education'
+    //   }
+    // }
   ]
 }
 
