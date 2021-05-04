@@ -2,7 +2,7 @@ export default {
   route: {
     pcunbo: 'PC端轮播图信息管理',
     New: 'PC端最新物品信息管理',
-    findList: '待招领物品详情信息',
+    findList: '微信端待招领物品详情信息管理',
     sFind: '微信端招领物品信息管理',
     goodsDetail: '微信端物品详情信息管理',
     category: '微信端寻物类别信息管理',

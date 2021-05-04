@@ -26,7 +26,7 @@ export function fetchPv(pv) {
 
 export function createArticle(data) {
   return request({
-    url: '/findlist',
+    url: '/findlist/all',
     method: 'post',
     data
   })

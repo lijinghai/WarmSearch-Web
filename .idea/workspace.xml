@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="11ca8c05-744a-4b96-a99e-5756cbd70b82" name="Default Changelist" comment="2021 5.4 微信小程序端物品详情信息管理">
+    <list default="true" id="11ca8c05-744a-4b96-a99e-5756cbd70b82" name="Default Changelist" comment="2021 5.4 微信小程序端招领信息管理">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/sFind.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/sFind.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/findList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/findList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lang/zh.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lang/zh.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/uni-app/sFind/sFind.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/uni-app/sFind/sFind.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/uni-app/findList/findList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/uni-app/findList/findList.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +68,7 @@
       <workItem from="1620026018359" duration="20147000" />
       <workItem from="1620060832264" duration="10067000" />
       <workItem from="1620108580224" duration="3883000" />
-      <workItem from="1620127134264" duration="3534000" />
+      <workItem from="1620127134264" duration="5377000" />
     </task>
     <task id="LOCAL-00001" summary="2021 4.30 修改">
       <created>1619766873039</created>
@@ -210,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620132429915</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="2021 5.4 微信小程序端招领信息管理">
+      <created>1620133400599</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1620133400599</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,6 +248,7 @@
     <MESSAGE value="2021 5.4 微信小程序端首页物品信息管理" />
     <MESSAGE value="2021 5.4 微信小程序端寻物类别信息管理" />
     <MESSAGE value="2021 5.4 微信小程序端物品详情信息管理" />
-    <option name="LAST_COMMIT_MESSAGE" value="2021 5.4 微信小程序端物品详情信息管理" />
+    <MESSAGE value="2021 5.4 微信小程序端招领信息管理" />
+    <option name="LAST_COMMIT_MESSAGE" value="2021 5.4 微信小程序端招领信息管理" />
   </component>
 </project>
