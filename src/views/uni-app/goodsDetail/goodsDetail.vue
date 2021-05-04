@@ -1,16 +1,15 @@
+<!--
+ * @Description: 微信小程序端物品详情信息管理
+ * @Author: lijinghailjh@163.com
+ * @Date: 2021/5/4
+ -->
 <template>
   <div class="app-container">
     <div class="filter-container">
       <el-input v-model="listQuery.id" :placeholder="$t('table.id')" style="width: 200px;" class="filter-item" @keyup.enter.native="handleFilter" />
-      <!--      <el-select v-model="listQuery.importance" :placeholder="$t('table.importance')" clearable style="width: 90px" class="filter-item">-->
-      <!--        <el-option v-for="item in importanceOptions" :key="item" :label="item" :value="item" />-->
-      <!--      </el-select>-->
-      <!--      <el-select v-model="listQuery.type" :placeholder="$t('table.type')" clearable class="filter-item" style="width: 130px">-->
-      <!--        <el-option v-for="item in calendarTypeOptions" :key="item.key" :label="item.display_name+'('+item.key+')'" :value="item.key" />-->
-      <!--      </el-select>-->
-      <!--      <el-select v-model="listQuery.sort" style="width: 140px" class="filter-item" @change="handleFilter">-->
-      <!--        <el-option v-for="item in sortOptions" :key="item.key" :label="item.label" :value="item.key" />-->
-      <!--      </el-select>-->
+      <el-select v-model="listQuery.sort" style="width: 140px" class="filter-item" @change="handleFilter">
+        <el-option v-for="item in sortOptions" :key="item.key" :label="item.label" :value="item.key" />
+      </el-select>
       <el-button v-waves class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">
         {{ $t('table.search') }}
       </el-button>
@@ -39,57 +38,12 @@
           <span>{{ row.id }}</span>
         </template>
       </el-table-column>
-      <el-table-column label="图片" align="center">
+      <el-table-column label="图片" width="400px" align="center">
         <template slot-scope="{row}">
-          <!--          <span>{{ row.imgUrl }}</span>-->
-          <img :src="row.dimgurl" style="width:120px; height:100px">
+          <img :src="row.dimgurl " style="width:120px; height:100px">
         </template>
       </el-table-column>
-      <!--      <el-table-column label="图片" width="1180px" align="center">-->
-      <!--        <template slot-scope="{row}">-->
-      <!--          &lt;!&ndash;          <span>{{ row.imgUrl }}</span>&ndash;&gt;-->
-      <!--          <img :src="row.d_imgurl" style="width:120px; height:100px">-->
-      <!--        </template>-->
-      <!--      </el-table-column>-->
-      <!--      <el-table-column label="名称" width="120px" align="center">-->
-      <!--        <template slot-scope="{row}">-->
-      <!--          <span>{{ row.imgname }}</span>-->
-      <!--        </template>-->
-      <!--      </el-table-column>-->
-      <!--      <el-table-column label="描述" width="120px" align="center">-->
-      <!--        <template slot-scope="{row}">-->
-      <!--          <span>{{ row.imgdesc}}</span>-->
-      <!--        </template>-->
-      <!--      </el-table-column>-->
-      <!--      <el-table-column label="状态" width="120px" align="center">-->
-      <!--        <template slot-scope="{row}">-->
-      <!--          <span>{{ row.status }}</span>-->
-      <!--        </template>-->
-      <!--      </el-table-column>-->
-      <!--      <el-table-column label="联系人" width="140px" align="center">-->
-      <!--        <template slot-scope="{row}">-->
-      <!--          <span>{{ row.lostname }}</span>-->
-      <!--        </template>-->
-      <!--      </el-table-column>-->
-
-      <!--      <el-table-column label="联系方式" type="date" width="200px" align="center">-->
-      <!--        <template slot-scope="{row}">-->
-      <!--          <span>{{ row.contact}}</span>-->
-      <!--        </template>-->
-      <!--      </el-table-column>-->
-
-      <!--      <el-table-column label="类型" type="date" width="170px" align="center">-->
-      <!--        <template slot-scope="{row}">-->
-      <!--          <span>{{ row.gid}}</span>-->
-      <!--        </template>-->
-      <!--      </el-table-column>-->
-
-      <!--      <el-table-column label="发布时间" type="date" width="200px" align="center">-->
-      <!--        <template slot-scope="{row}">-->
-      <!--          <span>{{ row.createTime | parseTime('{y}-{m}-{d} {h}:{i}:{s}') }}</span>-->
-      <!--        </template>-->
-      <!--      </el-table-column>-->
-      <el-table-column :label="$t('table.actions')" align="center" width="370" class-name="small-padding fixed-width">
+      <el-table-column :label="$t('table.actions')" align="center" width="250" class-name="small-padding fixed-width">
         <template slot-scope="{row,$index}">
           <el-button type="primary" size="mini" @click="handleUpdate(row)">
             {{ $t('table.edit') }}
@@ -106,51 +60,56 @@
     <el-dialog :title="textMap[dialogStatus]" :visible.sync="dialogFormVisible">
       <el-form ref="dataForm" :rules="rules" :model="temp" label-position="left" label-width="110px" style="width: 400px; margin-left:150px;">
 
-        <el-form-item :label="$t('table.dimgurl')" prop="dimgurl">
+        <el-form-item :label="$t('图片')" prop="dimgurl">
+
           <el-upload
             ref="upload"
             name="file"
             class="upload-demo"
-            action="http://localhost:8091/goodsdetail"
-            :on-preview="handlePreview"
+            action="http://localhost:8091/upload"
+            :on-success="beforeUpload"
             :on-remove="handleRemove"
-            :file-list="fileList"
-            list-type="picture"
+            list-type="picture-card"
           >
-            <el-button size="small" type="primary">点击上传</el-button>
-            <div slot="tip" class="el-upload__tip">只能上传jpg/png文件，且不超过500kb</div>
+            <i slot="default" class="el-icon-plus" />
+            <div slot="file" slot-scope="{file}">
+              <img
+                class="el-upload-list__item-thumbnail"
+                :src="file.url"
+                alt=""
+              >
+              <span class="el-upload-list__item-actions">
+                <span
+                  class="el-upload-list__item-preview"
+                  @click="handlePictureCardPreview(file)"
+                >
+                  <i class="el-icon-zoom-in" />
+                </span>
+                <span
+                  v-if="!disabled"
+                  class="el-upload-list__item-delete"
+                  @click="handleDownload1(file)"
+                >
+                  <i class="el-icon-download" />
+                </span>
+                <span
+                  v-if="!disabled"
+                  class="el-upload-list__item-delete"
+                  @click="handleRemove(file)"
+                >
+                  <i class="el-icon-delete" />
+                </span>
+              </span>
+            </div>
           </el-upload>
+          <el-dialog :visible.sync="dialogVisible">
+            <img width="100%" :src="dialogImageUrl" alt="">
+          </el-dialog>
         </el-form-item>
-
-        <!--        <el-form-item :label="$t('table.imgdesc')" prop="imgdesc">-->
-        <!--          <el-input v-model="temp.imgdesc" />-->
-        <!--        </el-form-item>-->
-
-        <!--        <el-form-item :label="$t('table.imgname')" prop="imgname">-->
-        <!--          <el-input v-model="temp.imgname" />-->
-        <!--        </el-form-item>-->
-
-        <!--        <el-form-item :label="$t('table.status')" prop="status">-->
-        <!--          <el-input v-model="temp.status" />-->
-        <!--        </el-form-item>-->
-
-        <!--        <el-form-item :label="$t('table.lostname')" prop="lostname">-->
-        <!--          <el-input v-model="temp.lostname" />-->
-        <!--        </el-form-item>-->
-
-        <!--        <el-form-item :label="$t('table.contact')" prop="contact">-->
-        <!--          <el-input v-model="temp.contact" />-->
-        <!--        </el-form-item>-->
-
-        <!--        <el-form-item :label="$t('table.gid')" prop="gid">-->
-        <!--          <el-input v-model="temp.gid" />-->
-        <!--        </el-form-item>-->
-
       </el-form>
       <div slot="footer" class="dialog-footer">
         <el-button @click="dialogFormVisible = false">
           {{ $t('table.cancel') }}
-          <!--          {{ $t('table.confirm') }}-->
         </el-button>
         <el-button type="primary" @click="dialogStatus==='create'?createData():updateData()">
           {{ $t('table.confirm') }}
@@ -167,11 +126,12 @@
         <el-button type="primary" @click="dialogPvVisible = false">{{ $t('table.confirm') }}</el-button>
       </span>
     </el-dialog>
+
   </div>
 </template>
 
 <script>
-import { fetchList, fetchPv, createArticle, updateArticle, deleteUser } from '@/api/goodsDetail.js'
+import { fetchList, fetchPv, createArticle, updateArticle, deleteUser } from '@/api/goodsDetail'
 import waves from '@/directive/waves' // waves directive
 import { parseTime } from '@/utils'
 import Pagination from '@/components/Pagination' // secondary package based on el-pagination
@@ -207,13 +167,10 @@ export default {
   },
   data() {
     return {
-      fileList: [],
-      // {name: 'food.jpeg',
-      // url: ''},
-      // {name: 'food2.jpeg',
-      //   url: 'https://fuss10.elemecdn.com/3/63/4e7f3a15429bfda99bce42a18cdd1jpeg.jpeg?imageMogr2/thumbnail/360x360/format/webp/quality/100'}
-
-      tableKey: Math.random(),
+      dialogImageUrl: '',
+      dialogVisible: false,
+      disabled: false,
+      tableKey: 0,
       list: null,
       total: 0,
       listLoading: true,
@@ -222,53 +179,16 @@ export default {
         limit: 10,
         id: undefined,
         dimgurl: '',
-        d_imgurl: '',
-        // imgurl: '',
-        // imgname: '',
-        // imgdesc: '',
-        // status: '',
-        // createTime: new Date(),
-        // lostname: '',
-        // contact: '',
-        // gid: '',
-        // username: '',
-        // password: '',
-        // profession: '',
-        // article: '',
-        // phoneNum: '',
-        // createTime: new Date(),
-        // updateTime: new Date(),
-        // importance: undefined,
-        // title: undefined,
-        // id: undefined,
-        // type: undefined,
         sort: '+id'
       },
       importanceOptions: [1, 2, 3],
       calendarTypeOptions,
-      sortOptions: [{ label: 'ID Descending', key: '-id' }, { label: 'ID Ascending', key: '+id' }],
+      sortOptions: [{ label: 'ID 升序', key: '+id' }, { label: 'ID 降序', key: '-id' }],
       statusOptions: ['published', 'draft', 'deleted'],
       showReviewer: false,
       temp: {
         id: undefined,
-        dimgurl: '',
-        d_imgurl: ''
-        // imgurl: '',
-        // imgname: '',
-        // imgdesc: '',
-        // status: '',
-        // createTime: new Date(),
-        // lostname: '',
-        // contact: '',
-        // gid: '',
-        // timestamp: new Date(),
-        // username: '',
-        // password: '',
-        // profession: '',
-        // article: '',
-        // phoneNum: '',
-        // createTime: new Date(),
-        // updateTime: new Date()
+        dimgurl: ''
       },
       dialogFormVisible: false,
       dialogStatus: '',
@@ -279,15 +199,7 @@ export default {
       dialogPvVisible: false,
       pvData: [],
       rules: {
-        // type: [{ required: true, message: 'type is required', trigger: 'change' }],
-        // timestamp: [{ type: 'date', required: true, message: 'timestamp is required', trigger: 'change' }],
-        // title: [{ required: true, message: 'title is required', trigger: 'blur' }]
-        // username: [{ required: true, message: '姓名必须输入', trigger: 'change' }],
-        // password: [{ required: true, message: '密码必须输入', trigger: 'change' }],
-        // profession: [{ required: true, message: '专业必须输入', trigger: 'change' }],
-        // article: [{ required: true, message: '物品名必须输入', trigger: 'change' }],
-        // phoneNum: [{ required: true, message: '电话号码必须输入', trigger: 'change' }]
-        dimgurl: [{ required: true, message: '图片必须输入', trigger: 'change' }]
+        dimgurl: [{ required: true, message: '请选择图片', trigger: 'change' }]
       },
       downloadLoading: false
     }
@@ -296,22 +208,28 @@ export default {
     this.getList()
   },
   methods: {
-    handleRemove(file, fileList) {
-      console.log(file, fileList)
+    beforeUpload(file) {
+      this.temp.dimgurl = file.url
+      console.log(file.url)
     },
-    handlePreview(file) {
-      console.log(file)
+    handleRemove(file) {
+      this.dialogImageUrl = file.url
+      console.log(file.response.url)
     },
-
+    handlePictureCardPreview(file) {
+      this.dialogImageUrl = file.url
+      this.dialogVisible = true
+      console.log(file.url)
+    },
+    handleDownload1(file) {
+      this.dialogImageUrl = file.url
+      console.log(file.url)
+    },
     getList() {
       this.listLoading = true
       fetchList(this.listQuery).then(response => {
         this.list = response.data.items
         this.total = response.data.total
-        // this.size = response.data.size
-        // this.current = response.data.current
-        // this.pages = response.data.pages
-        // Just to simulate the time of the request
         setTimeout(() => {
           this.listLoading = false
         }, 1.5 * 1000)
@@ -335,7 +253,7 @@ export default {
       }
     },
     sortByID(order) {
-      if (order === 'descending') {
+      if (order === 'ascending') {
         this.listQuery.sort = '+id'
       } else {
         this.listQuery.sort = '-id'
@@ -344,31 +262,8 @@ export default {
     },
     resetTemp() {
       this.temp = {
-        // id: undefined,
-        // importance: 1,
-        // remark: '',
-        // timestamp: new Date(),
-        // title: '',
-        // status: 'published',
-        // type: ''
         id: undefined,
-        dimgurl: '',
-        d_imgurl: ''
-        // imgurl: '',
-        // imgname: '',
-        // imgdesc: '',
-        // status: '',
-        // createTime: new Date(),
-        // lostname: '',
-        // contact: '',
-        // gid: '',
-        // username: '',
-        // password: '',
-        // profession: '',
-        // article: '',
-        // phoneNum: '',
-        // createTime: new Date(),
-        // updateTime: new Date()
+        dimgurl: ''
       }
     },
     handleCreate() {
@@ -380,11 +275,8 @@ export default {
       })
     },
     createData() {
-      this.$refs.upload.submit()
       this.$refs['dataForm'].validate((valid) => {
         if (valid) {
-          // this.temp.id = parseInt(Math.random() * 100) + 1024 // mock a id
-          // this.temp.author = 'vue-element-admin'
           createArticle(this.temp).then(() => {
             this.list.unshift(this.temp)
             this.dialogFormVisible = false
