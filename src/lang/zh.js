@@ -3,7 +3,7 @@ export default {
     pcunbo: 'PC端轮播图信息管理',
     New: 'PC端最新物品信息管理',
     findList: '待招领物品详情信息',
-    sFind: '招领信息',
+    sFind: '微信端招领物品信息管理',
     goodsDetail: '微信端物品详情信息管理',
     category: '微信端寻物类别信息管理',
     goodsFirst: '微信端首页物品信息管理',
