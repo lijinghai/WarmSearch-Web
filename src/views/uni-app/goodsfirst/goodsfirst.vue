@@ -86,12 +86,12 @@
     <el-dialog :title="textMap[dialogStatus]" :visible.sync="dialogFormVisible">
       <el-form ref="dataForm" :rules="rules" :model="temp" label-position="left" label-width="110px" style="width: 400px; margin-left:150px;">
 
-        <el-form-item :label="$t('图片')" prop="imgurl1">
+        <el-form-item :label="$t('图片')" prop="imgurl">
           <el-upload
             ref="upload"
             name="file"
             class="upload-demo"
-            action="http://localhost:8091/goodsdetail"
+            action="http://localhost:8091/upload"
             :on-success="beforeUpload"
             :on-remove="handleRemove"
             list-type="picture-card"
@@ -291,7 +291,7 @@ export default {
     },
     handleRemove1(file) {
       this.dialogImageUrl = file.url
-      console.log(file.response.url)
+      console.log(file.url)
     },
     handlePictureCardPreview(file) {
       this.dialogImageUrl = file.url

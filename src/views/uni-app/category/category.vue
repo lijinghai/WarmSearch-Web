@@ -2,6 +2,9 @@
   <div class="app-container">
     <div class="filter-container">
       <el-input v-model="listQuery.id" :placeholder="$t('table.id')" style="width: 200px;" class="filter-item" @keyup.enter.native="handleFilter" />
+      <el-select v-model="listQuery.sort" style="width: 140px" class="filter-item" @change="handleFilter">
+        <el-option v-for="item in sortOptions" :key="item.key" :label="item.label" :value="item.key" />
+      </el-select>
       <el-button v-waves class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">
         {{ $t('table.search') }}
       </el-button>
@@ -33,7 +36,7 @@
 
       <el-table-column label="物品类别" width="180px" align="center">
         <template slot-scope="{row}">
-          <span>{{ row.ctitle}}</span>
+          <span>{{ row.ctitle }}</span>
         </template>
       </el-table-column>
 
@@ -53,7 +56,7 @@
 
     <el-dialog :title="textMap[dialogStatus]" :visible.sync="dialogFormVisible">
       <el-form ref="dataForm" :rules="rules" :model="temp" label-position="left" label-width="110px" style="width: 400px; margin-left:150px;">
-        <el-form-item :label="$t('table.ctitle')" prop="ctitle">
+        <el-form-item :label="$t('物品类别')" prop="ctitle">
           <el-input v-model="temp.ctitle" />
         </el-form-item>
 
@@ -80,7 +83,7 @@
 </template>
 
 <script>
-import { fetchList, fetchPv, createArticle, updateArticle, deleteUser } from '@/api/category.js';
+import { fetchList, fetchPv, createArticle, updateArticle, deleteUser } from '@/api/category.js'
 import waves from '@/directive/waves' // waves directive
 import { parseTime } from '@/utils'
 import Pagination from '@/components/Pagination' // secondary package based on el-pagination
@@ -129,7 +132,7 @@ export default {
       },
       importanceOptions: [1, 2, 3],
       calendarTypeOptions,
-      sortOptions: [{ label: 'ID Descending', key: '-id' },{ label: 'ID Ascending', key: '+id' }],
+      sortOptions: [{ label: 'ID 升序', key: '+id' }, { label: 'ID 降序', key: '-id' }],
       statusOptions: ['published', 'draft', 'deleted'],
       showReviewer: false,
       temp: {
@@ -155,10 +158,10 @@ export default {
   },
   methods: {
     handleRemove(file, fileList) {
-      console.log(file, fileList);
+      console.log(file, fileList)
     },
     handlePreview(file) {
-      console.log(file);
+      console.log(file)
     },
 
     getList() {
