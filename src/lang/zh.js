@@ -1,5 +1,6 @@
 export default {
   route: {
+    attestation: 'PC端认领信息管理',
     pcunbo: 'PC端轮播图信息管理',
     New: 'PC端最新物品信息管理',
     findList: '微信端待招领物品详情信息管理',

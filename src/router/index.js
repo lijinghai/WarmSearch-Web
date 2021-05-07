@@ -138,6 +138,21 @@ export const asyncRoutes = [
       }
     ]
   },
+  // PC端认领信息管理
+  {
+    path: '/attestation',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/attestation/index'),
+        name: 'attestation',
+        meta: { title: 'attestation',
+          icon: 'international'
+        }
+      }
+    ]
+  },
   // 微信小程序端轮播图信息管理
   {
     path: '/i18n',
