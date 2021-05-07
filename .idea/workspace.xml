@@ -1,21 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="11ca8c05-744a-4b96-a99e-5756cbd70b82" name="Default Changelist" comment="2021 5.7 认领信息登记功能">
+    <list default="true" id="11ca8c05-744a-4b96-a99e-5756cbd70b82" name="Default Changelist" comment="2021 5.7 更新页面自动刷新功能">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/attestation/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/attestation/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/goods/electronic/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/goods/electronic/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/monitor/log/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/monitor/log/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/new/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/new/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/pcUnbo/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/pcUnbo/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/teacher/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/teacher/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/uni-app/category/category.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/uni-app/category/category.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/uni-app/findList/findList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/uni-app/findList/findList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/uni-app/goodsDetail/goodsDetail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/uni-app/goodsDetail/goodsDetail.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/uni-app/goodsfirst/goodsfirst.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/uni-app/goodsfirst/goodsfirst.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/uni-app/sFind/sFind.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/uni-app/sFind/sFind.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/uni-app/unbo/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/uni-app/unbo/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/user/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/user/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +66,9 @@
       <workItem from="1620060832264" duration="10067000" />
       <workItem from="1620108580224" duration="3883000" />
       <workItem from="1620127134264" duration="5747000" />
-      <workItem from="1620380099698" duration="5068000" />
+      <workItem from="1620380099698" duration="5236000" />
+      <workItem from="1620396680345" duration="654000" />
+      <workItem from="1620406731031" duration="1214000" />
     </task>
     <task id="LOCAL-00001" summary="2021 4.30 修改">
       <created>1619766873039</created>
@@ -242,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620383658989</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="2021 5.7 更新页面自动刷新功能">
+      <created>1620385306317</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1620385306317</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,6 +272,7 @@
     <MESSAGE value="2021 5.4 微信小程序端招领信息管理" />
     <MESSAGE value="2021 5.4 微信小程序端待招领详情信息管理" />
     <MESSAGE value="2021 5.7 认领信息登记功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="2021 5.7 认领信息登记功能" />
+    <MESSAGE value="2021 5.7 更新页面自动刷新功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="2021 5.7 更新页面自动刷新功能" />
   </component>
 </project>
