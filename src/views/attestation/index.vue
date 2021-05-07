@@ -239,7 +239,7 @@ export default {
         goodsName: '',
         number: '',
         userName: '',
-        sort: '+id'
+        sort: '-id'
       },
       importanceOptions: [1, 2, 3],
       calendarTypeOptions,

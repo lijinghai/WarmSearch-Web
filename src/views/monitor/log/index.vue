@@ -240,7 +240,7 @@ export default {
         panelId: '',
         kindId: '',
         type: '2',
-        sort: '+id'
+        sort: '-id'
       },
       importanceOptions: [1, 2, 3],
       calendarTypeOptions,
@@ -367,6 +367,7 @@ export default {
               type: 'success',
               duration: 2000
             })
+            this.getList()
           })
         }
       })

@@ -193,7 +193,7 @@ export default {
         url: '',
         createTime: '',
         updatedTime: '',
-        sort: '+id'
+        sort: '-id'
       },
       importanceOptions: [1, 2, 3],
       calendarTypeOptions,
@@ -309,6 +309,7 @@ export default {
               type: 'success',
               duration: 2000
             })
+            this.getList()
           })
         }
       })
