@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="11ca8c05-744a-4b96-a99e-5756cbd70b82" name="Default Changelist" comment="2021 5.8 项目说明" />
+    <list default="true" id="11ca8c05-744a-4b96-a99e-5756cbd70b82" name="Default Changelist" comment="2021 5.8 项目说明">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,6 +71,9 @@
       <workItem from="1620396680345" duration="654000" />
       <workItem from="1620406731031" duration="1291000" />
       <workItem from="1620410610125" duration="4000" />
+      <workItem from="1620412058880" duration="111000" />
+      <workItem from="1620514813686" duration="203000" />
+      <workItem from="1620542901574" duration="116000" />
     </task>
     <task id="LOCAL-00001" summary="2021 4.30 修改">
       <created>1619766873039</created>
@@ -244,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620410556301</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="2021 5.8 项目说明">
+      <created>1620412104935</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1620412104935</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
