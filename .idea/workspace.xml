@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="11ca8c05-744a-4b96-a99e-5756cbd70b82" name="Default Changelist" comment="2021 5.9 项目说明">
+    <list default="true" id="aec9563d-b389-4ab2-9b49-8f0fdbeae6b9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/dashboard/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/dashboard/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,19 +15,18 @@
       <option value="directory" />
     </option>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Vue Single File Component" />
-        <option value="JavaScript File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1rsZIlQbB0oXzVR51XPyNy6h0dw" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1sTu6x8fkdyCDPKUElq2AoNgwTD" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -35,236 +35,28 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
-    <property name="ts.external.directory.path" value="D:\NewFile WebStorm\WebStorm 2021.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="11ca8c05-744a-4b96-a99e-5756cbd70b82" name="Default Changelist" comment="" />
-      <created>1619766683484</created>
+      <changelist id="aec9563d-b389-4ab2-9b49-8f0fdbeae6b9" name="Default Changelist" comment="" />
+      <created>1620908729167</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1619766683484</updated>
-      <workItem from="1619766688183" duration="960000" />
-      <workItem from="1619768907570" duration="756000" />
-      <workItem from="1619883561564" duration="2517000" />
-      <workItem from="1619932642271" duration="6470000" />
-      <workItem from="1619955152359" duration="3599000" />
-      <workItem from="1619966757690" duration="1361000" />
-      <workItem from="1619970386776" duration="966000" />
-      <workItem from="1619973091472" duration="173000" />
-      <workItem from="1619976129453" duration="2774000" />
-      <workItem from="1620022542431" duration="87000" />
-      <workItem from="1620026018359" duration="20147000" />
-      <workItem from="1620060832264" duration="10067000" />
-      <workItem from="1620108580224" duration="3883000" />
-      <workItem from="1620127134264" duration="5747000" />
-      <workItem from="1620380099698" duration="5236000" />
-      <workItem from="1620396680345" duration="654000" />
-      <workItem from="1620406731031" duration="1291000" />
-      <workItem from="1620410610125" duration="4000" />
-      <workItem from="1620412058880" duration="111000" />
-      <workItem from="1620514813686" duration="203000" />
-      <workItem from="1620542901574" duration="116000" />
-      <workItem from="1620547925346" duration="369000" />
+      <updated>1620908729167</updated>
+      <workItem from="1620908730983" duration="697000" />
+      <workItem from="1621514746256" duration="1242000" />
+      <workItem from="1621559004457" duration="755000" />
+      <workItem from="1621820262063" duration="3263000" />
     </task>
-    <task id="LOCAL-00001" summary="2021 4.30 修改">
-      <created>1619766873039</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1619766873039</updated>
-    </task>
-    <task id="LOCAL-00002" summary="2021 4.30 修改">
-      <created>1619766974544</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1619766974544</updated>
-    </task>
-    <task id="LOCAL-00003" summary="2021 5.2 修改">
-      <created>1619885756769</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1619885756769</updated>
-    </task>
-    <task id="LOCAL-00004" summary="2021 5.2 修改">
-      <created>1619935830774</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1619935830774</updated>
-    </task>
-    <task id="LOCAL-00005" summary="2021 5.2 修改">
-      <created>1619945771347</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1619945771347</updated>
-    </task>
-    <task id="LOCAL-00006" summary="2021 5.3 说明">
-      <created>1620040039419</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1620040039419</updated>
-    </task>
-    <task id="LOCAL-00007" summary="2021 5.3 说明">
-      <created>1620040197410</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1620040197410</updated>
-    </task>
-    <task id="LOCAL-00008" summary="2021 5.3 PC端用户管理">
-      <created>1620040506811</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1620040506811</updated>
-    </task>
-    <task id="LOCAL-00009" summary="2021 5.3 PC端用户管理操作">
-      <created>1620041647896</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1620041647896</updated>
-    </task>
-    <task id="LOCAL-00010" summary="2021 5.3 PC端用户管理操作">
-      <created>1620044404023</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1620044404023</updated>
-    </task>
-    <task id="LOCAL-00011" summary="2021 5.3 PC端用户管理操作">
-      <created>1620044656091</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1620044656091</updated>
-    </task>
-    <task id="LOCAL-00012" summary="2021 5.4 PC端急需物品管理">
-      <created>1620060128442</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1620060128442</updated>
-    </task>
-    <task id="LOCAL-00013" summary="2021 5.4 PC端急需物品管理">
-      <created>1620062293021</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1620062293021</updated>
-    </task>
-    <task id="LOCAL-00014" summary="2021 5.4 PC端物品详情信息管理">
-      <created>1620063059701</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1620063059701</updated>
-    </task>
-    <task id="LOCAL-00015" summary="2021 5.4 PC端最新物品信息管理">
-      <created>1620064506760</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1620064506762</updated>
-    </task>
-    <task id="LOCAL-00016" summary="2021 5.4 PC端最新物品信息管理">
-      <created>1620066059304</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1620066059304</updated>
-    </task>
-    <task id="LOCAL-00017" summary="2021 5.4 微信小程序端轮播图信息管理">
-      <created>1620067715294</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1620067715294</updated>
-    </task>
-    <task id="LOCAL-00018" summary="2021 5.4 微信小程序端首页物品信息管理">
-      <created>1620071501473</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1620071501474</updated>
-    </task>
-    <task id="LOCAL-00019" summary="2021 5.4 微信小程序端寻物类别信息管理">
-      <created>1620131556051</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1620131556051</updated>
-    </task>
-    <task id="LOCAL-00020" summary="2021 5.4 微信小程序端物品详情信息管理">
-      <created>1620132429914</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1620132429915</updated>
-    </task>
-    <task id="LOCAL-00021" summary="2021 5.4 微信小程序端招领信息管理">
-      <created>1620133400599</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1620133400599</updated>
-    </task>
-    <task id="LOCAL-00022" summary="2021 5.4 微信小程序端待招领详情信息管理">
-      <created>1620135614023</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1620135614023</updated>
-    </task>
-    <task id="LOCAL-00023" summary="2021 5.7 认领信息登记功能">
-      <created>1620383658989</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1620383658989</updated>
-    </task>
-    <task id="LOCAL-00024" summary="2021 5.7 更新页面自动刷新功能">
-      <created>1620385306317</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1620385306317</updated>
-    </task>
-    <task id="LOCAL-00025" summary="2021 5.8 项目说明">
-      <created>1620410556301</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1620410556301</updated>
-    </task>
-    <task id="LOCAL-00026" summary="2021 5.8 项目说明">
-      <created>1620412104935</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1620412104935</updated>
-    </task>
-    <task id="LOCAL-00027" summary="2021 5.9 项目说明">
-      <created>1620548049514</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1620548049514</updated>
-    </task>
-    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,27 +72,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="2021 4.30 修改" />
-    <MESSAGE value="2021 5.2 修改" />
-    <MESSAGE value="2021 5.3 说明" />
-    <MESSAGE value="2021 5.3 PC端用户管理" />
-    <MESSAGE value="2021 5.3 PC端用户管理操作" />
-    <MESSAGE value="2021 5.4 PC端急需物品管理" />
-    <MESSAGE value="2021 5.4 PC端物品详情信息管理" />
-    <MESSAGE value="2021 5.4 PC端最新物品信息管理" />
-    <MESSAGE value="2021 5.4 微信小程序端轮播图信息管理" />
-    <MESSAGE value="2021 5.4 微信小程序端首页物品信息管理" />
-    <MESSAGE value="2021 5.4 微信小程序端寻物类别信息管理" />
-    <MESSAGE value="2021 5.4 微信小程序端物品详情信息管理" />
-    <MESSAGE value="2021 5.4 微信小程序端招领信息管理" />
-    <MESSAGE value="2021 5.4 微信小程序端待招领详情信息管理" />
-    <MESSAGE value="2021 5.7 认领信息登记功能" />
-    <MESSAGE value="2021 5.7 更新页面自动刷新功能" />
-    <MESSAGE value="2021 5.8 项目说明" />
-    <MESSAGE value="2021 5.9 项目说明" />
-    <option name="LAST_COMMIT_MESSAGE" value="2021 5.9 项目说明" />
   </component>
 </project>
