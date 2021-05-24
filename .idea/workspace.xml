@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aec9563d-b389-4ab2-9b49-8f0fdbeae6b9" name="Default Changelist" comment="2021 5 24 首页优化" />
+    <list default="true" id="aec9563d-b389-4ab2-9b49-8f0fdbeae6b9" name="Default Changelist" comment="2021 5 24 项目说明">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/profile/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/profile/index.vue" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +55,8 @@
       <workItem from="1620908730983" duration="697000" />
       <workItem from="1621514746256" duration="1242000" />
       <workItem from="1621559004457" duration="755000" />
-      <workItem from="1621820262063" duration="3829000" />
+      <workItem from="1621820262063" duration="4210000" />
+      <workItem from="1621826488642" duration="650000" />
     </task>
     <task id="LOCAL-00001" summary="2021 5 24 首页优化">
       <created>1621823913283</created>
@@ -68,7 +72,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621824143172</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="2021 5 24 项目说明">
+      <created>1621824412699</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1621824412699</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -84,9 +95,11 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2021 5 24 首页优化" />
-    <option name="LAST_COMMIT_MESSAGE" value="2021 5 24 首页优化" />
+    <MESSAGE value="2021 5 24 项目说明" />
+    <option name="LAST_COMMIT_MESSAGE" value="2021 5 24 项目说明" />
   </component>
 </project>
