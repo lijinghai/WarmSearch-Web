@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aec9563d-b389-4ab2-9b49-8f0fdbeae6b9" name="Default Changelist" comment="2021 5 24 项目说明">
+    <list default="true" id="aec9563d-b389-4ab2-9b49-8f0fdbeae6b9" name="Default Changelist" comment="2021 5 24 个人中心页面完善">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/profile/components/Account.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/profile/components/Account.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/profile/components/UserCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/profile/components/UserCard.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/profile/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/profile/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +58,9 @@
       <workItem from="1621514746256" duration="1242000" />
       <workItem from="1621559004457" duration="755000" />
       <workItem from="1621820262063" duration="4210000" />
-      <workItem from="1621826488642" duration="650000" />
+      <workItem from="1621826488642" duration="1029000" />
+      <workItem from="1621827776593" duration="58000" />
+      <workItem from="1621829952359" duration="2844000" />
     </task>
     <task id="LOCAL-00001" summary="2021 5 24 首页优化">
       <created>1621823913283</created>
@@ -79,7 +83,35 @@
       <option name="project" value="LOCAL" />
       <updated>1621824412699</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="2021 5 24 个人中心">
+      <created>1621827196162</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1621827196162</updated>
+    </task>
+    <task id="LOCAL-00005" summary="2021 5 24 个人中心">
+      <created>1621827226811</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1621827226811</updated>
+    </task>
+    <task id="LOCAL-00006" summary="2021 5 24 个人中心页面完善">
+      <created>1621827253150</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1621827253150</updated>
+    </task>
+    <task id="LOCAL-00007" summary="2021 5 24 个人中心页面完善">
+      <created>1621827295341</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1621827295341</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,6 +132,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2021 5 24 首页优化" />
     <MESSAGE value="2021 5 24 项目说明" />
-    <option name="LAST_COMMIT_MESSAGE" value="2021 5 24 项目说明" />
+    <MESSAGE value="2021 5 24 个人中心" />
+    <MESSAGE value="2021 5 24 个人中心页面完善" />
+    <option name="LAST_COMMIT_MESSAGE" value="2021 5 24 个人中心页面完善" />
   </component>
 </project>
