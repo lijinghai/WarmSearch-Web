@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="aec9563d-b389-4ab2-9b49-8f0fdbeae6b9" name="Default Changelist" comment="2021 5 24 个人中心页面完善">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/profile/components/Account.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/profile/components/Account.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GithubCorner/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GithubCorner/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/components/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/components/Navbar.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/profile/components/UserCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/profile/components/UserCard.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/profile/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/profile/index.vue" afterDir="false" />
     </list>
@@ -44,6 +45,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="ts.external.directory.path" value="D:\NewFile WebStorm\WebStorm 2021.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -60,7 +62,10 @@
       <workItem from="1621820262063" duration="4210000" />
       <workItem from="1621826488642" duration="1029000" />
       <workItem from="1621827776593" duration="58000" />
-      <workItem from="1621829952359" duration="2844000" />
+      <workItem from="1621829952359" duration="2969000" />
+      <workItem from="1621835496986" duration="1758000" />
+      <workItem from="1622021315215" duration="529000" />
+      <workItem from="1622034466734" duration="881000" />
     </task>
     <task id="LOCAL-00001" summary="2021 5 24 首页优化">
       <created>1621823913283</created>
@@ -111,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621827295341</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="2021 5 24 个人中心页面完善">
+      <created>1621834071169</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1621834071169</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

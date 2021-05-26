@@ -8,7 +8,7 @@
       <div class="box-center">
         <pan-thumb :image="user.avatar" :height="'100px'" :width="'100px'" :hoverable="false">
           <div>你好，</div>
-          {{ user.role }}
+          管理员
         </pan-thumb>
       </div>
       <div class="box-center">
