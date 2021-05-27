@@ -1,3 +1,8 @@
+<!--
+ * @Description: 登录页面
+ * @Author: lijinghailjh@163.com
+ * @Date: 2021/3/22
+ -->
 <template>
   <div class="login-container"  :style="'background-image:url('+ Background +');'">
     <el-form ref="loginForm" :model="loginForm" :rules="loginRules" class="login-form" autocomplete="on" label-position="left">
@@ -106,7 +111,8 @@ export default {
     //   }
     // }
     return {
-      Background: Background,
+      // 设置登录背景图片
+      Background: "https://cdn.jsdelivr.net/gh/Dorian1015/cdn/img/github/122.jpg",
       loginForm: {
         username: 'admin1',
         password: 'password1'
@@ -273,7 +279,9 @@ $light_gray: #726d6d;
     position: relative;
     max-width: 100%;
     margin: 0 auto;
-    top: 273px;
+    //设置登录框位置
+    //top: 273px;
+    top: 179px;
     overflow: hidden;
     border-radius: 6px;
     background: #ffffff;
