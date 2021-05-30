@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aec9563d-b389-4ab2-9b49-8f0fdbeae6b9" name="Default Changelist" comment="2021 5 27 登录页面优化">
+    <list default="true" id="aec9563d-b389-4ab2-9b49-8f0fdbeae6b9" name="Default Changelist" comment="2021 5 27 项目说明修改">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +64,8 @@
       <workItem from="1622034466734" duration="881000" />
       <workItem from="1622036887822" duration="155000" />
       <workItem from="1622085002025" duration="1543000" />
-      <workItem from="1622089468553" duration="490000" />
+      <workItem from="1622089468553" duration="664000" />
+      <workItem from="1622131037752" duration="365000" />
     </task>
     <task id="LOCAL-00001" summary="2021 5 24 首页优化">
       <created>1621823913283</created>
@@ -137,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622086481718</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="2021 5 27 项目说明修改">
+      <created>1622090091957</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1622090091957</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +169,7 @@
     <MESSAGE value="2021 5 24 个人中心页面完善" />
     <MESSAGE value="2021 5 26 个人中心页面完善" />
     <MESSAGE value="2021 5 27 登录页面优化" />
-    <option name="LAST_COMMIT_MESSAGE" value="2021 5 27 登录页面优化" />
+    <MESSAGE value="2021 5 27 项目说明修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="2021 5 27 项目说明修改" />
   </component>
 </project>
