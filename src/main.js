@@ -19,6 +19,9 @@ import './permission' // permission control
 import './utils/error-log' // error log
 
 import * as filters from './filters' // global filters
+// excel表格
+import JsonExcel from 'vue-json-excel'
+Vue.component('downloadExcel', JsonExcel)
 
 /**
  * If you don't want to use mock-server

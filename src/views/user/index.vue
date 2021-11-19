@@ -1,5 +1,16 @@
 <template>
   <div class="app-container">
+
+    <!--    <download-excel-->
+    <!--      class="export-excel-wrapper"-->
+    <!--      :data="json_data"-->
+    <!--      :fields="json_fields"-->
+    <!--      title="毕业要求达成情况定性评价模型——基于应届毕业生毕业要求达成度调查问卷"-->
+    <!--      name="毕业要求达成情况定性评价模型.xls"-->
+    <!--    >-->
+    <!--      <el-button type="primary" size="small" style="right: 30px;position: absolute;">导出EXCEL</el-button>-->
+    <!--    </download-excel>-->
+
     <div class="filter-container">
       <el-input v-model="listQuery.id" :placeholder="$t('table.id')" style="width: 200px;" class="filter-item" @keyup.enter.native="handleFilter" />
       <el-select v-model="listQuery.sort" style="width: 140px" class="filter-item" @change="handleFilter">
@@ -128,6 +139,27 @@ export default {
   },
   data() {
     return {
+      moXings: [], // 模型数据
+      json_fields: {
+        '毕业要求': 'ord',
+        '指标点': 'ord1',
+        'NA': 'na',
+        'NB': 'nb',
+        'NC': 'nc',
+        'ND': 'nd',
+        'NE': 'ne',
+        '达成情况评价值': 'estimate'
+      },
+      json_data: [], // 导出表格数据
+      json_meta: [
+        [
+          {
+            ' key ': ' charset ',
+            ' value ': ' utf- 8 '
+          }
+        ]
+      ],
+
       tableKey: 0,
       list: null,
       total: 0,
@@ -173,6 +205,7 @@ export default {
       this.listLoading = true
       fetchList(this.listQuery).then(response => {
         this.list = response.data.items
+        this.json_data = response.data.items
         this.total = response.data.total
         setTimeout(() => {
           this.listLoading = false
