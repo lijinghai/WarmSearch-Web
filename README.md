@@ -1,4 +1,4 @@
-<h1 align="center"> 校园失物招领网站 | Dorian </h1>
+<h1 align="center"> 校园失物招领网站 | 何逢君 </h1>
 
 <p align="center">
  	<a href="https://github.com/lijinghailjh/WarmSearch">
@@ -17,7 +17,7 @@
 
 <p align="center">
      <a href="https://github.com/lijinghailjh/WarmSearch">
-		<img src="https://img.shields.io/badge/Dorian-%E6%B5%B7-blue"
+		<img src="https://img.shields.io/badge/何逢君-%E6%B5%B7-blue"
 			 alt="Status">
 	</a>
 </p>
