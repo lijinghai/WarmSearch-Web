@@ -42,7 +42,7 @@ export function updateArticle(data) {
 
 export function deleteUser(id) {
   return request({
-    url: '/findlist',
+    url: '/findlist/delete',
     method: 'post',
     params: { id }
   })

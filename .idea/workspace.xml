@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="717ede83-cabf-4f3d-8066-903665640cc1" name="Changes" comment="">
+    <list default="true" id="755db1f9-250f-41ac-87a2-f9da33f7f225" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/user/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/user/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/findList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/findList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/uni-app/findList/findList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/uni-app/findList/findList.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +15,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="20zEf3WNprBWlXa52zjVzlEZPuh" />
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="21AmXPgShFUCJAdCuVUVNtfWYJa" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -26,7 +27,6 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MySeal-PC" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -36,16 +36,15 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="717ede83-cabf-4f3d-8066-903665640cc1" name="Changes" comment="" />
-      <created>1637039115485</created>
+      <changelist id="755db1f9-250f-41ac-87a2-f9da33f7f225" name="Changes" comment="" />
+      <created>1637392304610</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1637039115485</updated>
-      <workItem from="1637039117352" duration="5511000" />
-      <workItem from="1637053411681" duration="584000" />
-      <workItem from="1637057393252" duration="649000" />
-      <workItem from="1637299292707" duration="46000" />
-      <workItem from="1637299523278" duration="452000" />
+      <updated>1637392304610</updated>
+      <workItem from="1637392305831" duration="1094000" />
+      <workItem from="1638772498151" duration="258000" />
+      <workItem from="1638782184109" duration="44000" />
+      <workItem from="1644915344705" duration="4578000" />
     </task>
     <servers />
   </component>
@@ -62,6 +61,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

@@ -133,9 +133,9 @@
           <el-input v-model="temp.flImgdesc" />
         </el-form-item>
 
-        <el-form-item :label="$t('物品名称')" prop="flName">
-          <el-input v-model="temp.flName" />
-        </el-form-item>
+        <!--        <el-form-item :label="$t('物品名称')" prop="flName">-->
+        <!--          <el-input v-model="temp.flName" />-->
+        <!--        </el-form-item>-->
         <el-form-item :label="$t('联系人')" prop="flContact">
           <el-input v-model="temp.flName" />
         </el-form-item>
