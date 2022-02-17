@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="755db1f9-250f-41ac-87a2-f9da33f7f225" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="755db1f9-250f-41ac-87a2-f9da33f7f225" name="Changes" comment="20222215认领功能">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/findList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/findList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/uni-app/findList/findList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/uni-app/findList/findList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +12,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="4" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -44,8 +45,18 @@
       <workItem from="1637392305831" duration="1094000" />
       <workItem from="1638772498151" duration="258000" />
       <workItem from="1638782184109" duration="44000" />
-      <workItem from="1644915344705" duration="4578000" />
+      <workItem from="1644915344705" duration="4613000" />
+      <workItem from="1645089501410" duration="591000" />
+      <workItem from="1645095607006" duration="8000" />
     </task>
+    <task id="LOCAL-00001" summary="20222215认领功能">
+      <created>1644931436721</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1644931436721</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -61,5 +72,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="20222215认领功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="20222215认领功能" />
   </component>
 </project>
