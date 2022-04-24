@@ -153,6 +153,21 @@ export const asyncRoutes = [
       }
     ]
   },
+  // 微信小程序端用户信息管理
+  {
+    path: '/suser',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/uni-app/sUser/index'),
+        name: 'Suser',
+        meta: { title: 'Suser',
+          icon: 'international'
+        }
+      }
+    ]
+  },
   // 微信小程序端轮播图信息管理
   {
     path: '/i18n',

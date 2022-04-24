@@ -1,6 +1,6 @@
 export default {
   route: {
-    attestation: 'PC端认领信息管理',
+    attestation: '认领信息管理',
     pcunbo: 'PC端轮播图信息管理',
     New: 'PC端最新物品信息管理',
     findList: '微信端待招领物品详情信息管理',
@@ -9,6 +9,7 @@ export default {
     category: '微信端寻物类别信息管理',
     goodsFirst: '微信端首页物品信息管理',
     imgUrl: '图片',
+    Suser: '微信端用户信息管理',
     UnBo: '微信端轮播图信息管理',
     dashboard: '首页',
     documentation: '文档',

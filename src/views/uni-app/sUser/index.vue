@@ -1,16 +1,10 @@
+<!--
+ * @Description: 认领信息登记功能
+ * @Author: lijinghailjh@163.com
+ * @Date: 2022/4/7
+ -->
 <template>
   <div class="app-container">
-
-    <!--    <download-excel-->
-    <!--      class="export-excel-wrapper"-->
-    <!--      :data="json_data"-->
-    <!--      :fields="json_fields"-->
-    <!--      title="毕业要求达成情况定性评价模型——基于应届毕业生毕业要求达成度调查问卷"-->
-    <!--      name="毕业要求达成情况定性评价模型.xls"-->
-    <!--    >-->
-    <!--      <el-button type="primary" size="small" style="right: 30px;position: absolute;">导出EXCEL</el-button>-->
-    <!--    </download-excel>-->
-
     <div class="filter-container">
       <el-input v-model="listQuery.id" :placeholder="$t('table.id')" style="width: 200px;" class="filter-item" @keyup.enter.native="handleFilter" />
       <el-select v-model="listQuery.sort" style="width: 140px" class="filter-item" @change="handleFilter">
@@ -54,7 +48,21 @@
           <span>{{ row.password }}</span>
         </template>
       </el-table-column>
-
+      <el-table-column label="个性签名" width="120px" align="center">
+        <template slot-scope="{row}">
+          <span>{{ row.introduction }}</span>
+        </template>
+      </el-table-column>
+      <el-table-column label="邮箱" width="220px" align="center">
+        <template slot-scope="{row}">
+          <span>{{ row.email }}</span>
+        </template>
+      </el-table-column>
+      <el-table-column label="认领人的证件照" width="220px" align="center">
+        <template slot-scope="{row}">
+          <img :src="row.avatar" style="width:120px; height:100px">
+        </template>
+      </el-table-column>
       <el-table-column :label="$t('table.actions')" align="center" width="400" class-name="small-padding fixed-width">
         <template slot-scope="{row,$index}">
           <el-button type="primary" size="mini" @click="handleUpdate(row)">
@@ -103,7 +111,7 @@
 </template>
 
 <script>
-import { fetchList, fetchPv, createArticle, updateArticle, deleteUser } from '@/api/employee'
+import { fetchList, fetchPv, createArticle, updateArticle, deleteUser } from '@/api/suser'
 import waves from '@/directive/waves' // waves directive
 import { parseTime } from '@/utils'
 import Pagination from '@/components/Pagination' // secondary package based on el-pagination
@@ -168,6 +176,9 @@ export default {
         page: 1,
         limit: 10,
         id: undefined,
+        introduction: '',
+        email: '',
+        avatar: '',
         username: '',
         password: '',
         sort: '-id'
@@ -180,6 +191,9 @@ export default {
       temp: {
         id: undefined,
         username: '',
+        introduction: '',
+        email: '',
+        avatar: '',
         password: ''
       },
       dialogFormVisible: false,
@@ -241,8 +255,10 @@ export default {
       this.temp = {
         id: undefined,
         username: '',
-        password: ''
-
+        password: '',
+        introduction: '',
+        email: '',
+        avatar: ''
       }
     },
     handleCreate() {

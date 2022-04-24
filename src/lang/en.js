@@ -7,6 +7,7 @@ export default {
     goodsFirst: 'goodsFirst',
     imgUrl: 'ImgUrl',
     UnBo: 'UnBo',
+    Suser: 'Suser',
     dashboard: 'Dashboard',
     documentation: 'Documentation',
     guide: 'Guide',

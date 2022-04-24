@@ -1,66 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="755db1f9-250f-41ac-87a2-f9da33f7f225" name="Changes" comment="2022 小程序v2.0" />
+    <list default="true" id="717ede83-cabf-4f3d-8066-903665640cc1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/api/suser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/uni-app/sUser/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lang/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lang/en.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lang/zh.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lang/zh.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/user/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/user/index.vue" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitToolBoxStore">
-    <option name="projectConfigVersion" value="4" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="21AmXPgShFUCJAdCuVUVNtfWYJa" />
+  <component name="ProjectId" id="20zEf3WNprBWlXa52zjVzlEZPuh" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="755db1f9-250f-41ac-87a2-f9da33f7f225" name="Changes" comment="" />
-      <created>1637392304610</created>
+      <changelist id="717ede83-cabf-4f3d-8066-903665640cc1" name="Changes" comment="" />
+      <created>1637039115485</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1637392304610</updated>
-      <workItem from="1637392305831" duration="1094000" />
-      <workItem from="1638772498151" duration="258000" />
-      <workItem from="1638782184109" duration="44000" />
-      <workItem from="1644915344705" duration="4613000" />
-      <workItem from="1645089501410" duration="591000" />
-      <workItem from="1645095607006" duration="62000" />
+      <updated>1637039115485</updated>
+      <workItem from="1637039117352" duration="5511000" />
+      <workItem from="1637053411681" duration="584000" />
+      <workItem from="1637057393252" duration="649000" />
+      <workItem from="1637299292707" duration="46000" />
+      <workItem from="1637299523278" duration="452000" />
+      <workItem from="1650767065197" duration="3692000" />
     </task>
-    <task id="LOCAL-00001" summary="20222215认领功能">
-      <created>1644931436721</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1644931436721</updated>
-    </task>
-    <task id="LOCAL-00002" summary="2022 小程序v2.0">
-      <created>1645095650424</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1645095650425</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -76,10 +75,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="20222215认领功能" />
-    <MESSAGE value="2022 小程序v2.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="2022 小程序v2.0" />
   </component>
 </project>
