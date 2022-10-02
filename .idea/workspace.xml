@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="717ede83-cabf-4f3d-8066-903665640cc1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/api/suser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/uni-app/sUser/index.vue" afterDir="false" />
+    <list default="true" id="717ede83-cabf-4f3d-8066-903665640cc1" name="Changes" comment="2022424 新增微信用户管理信息">
+      <change beforePath="$PROJECT_DIR$/.env.development" beforeDir="false" afterPath="$PROJECT_DIR$/.env.development" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lang/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lang/en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lang/zh.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lang/zh.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/user/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/user/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/dashboard/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/dashboard/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,17 +30,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/System/Desktop/lijinghai/Code/font/WarmSearch-Web&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -58,8 +56,27 @@
       <workItem from="1637057393252" duration="649000" />
       <workItem from="1637299292707" duration="46000" />
       <workItem from="1637299523278" duration="452000" />
-      <workItem from="1650767065197" duration="3692000" />
+      <workItem from="1650767065197" duration="4527000" />
+      <workItem from="1662510495485" duration="22000" />
+      <workItem from="1662512321414" duration="95000" />
+      <workItem from="1663378870442" duration="24000" />
+      <workItem from="1663378978708" duration="77000" />
+      <workItem from="1663379068724" duration="218000" />
+      <workItem from="1664030381157" duration="575000" />
+      <workItem from="1664032028067" duration="676000" />
+      <workItem from="1664465816835" duration="89000" />
+      <workItem from="1664465913510" duration="13000" />
+      <workItem from="1664635742213" duration="1780000" />
+      <workItem from="1664684164151" duration="1961000" />
     </task>
+    <task id="LOCAL-00001" summary="2022424 新增微信用户管理信息">
+      <created>1650770991281</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1650770991281</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -75,5 +92,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2022424 新增微信用户管理信息" />
+    <option name="LAST_COMMIT_MESSAGE" value="2022424 新增微信用户管理信息" />
   </component>
 </project>
